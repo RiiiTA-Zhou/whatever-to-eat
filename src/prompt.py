@@ -1,0 +1,1 @@
+query_rephrase = '''根据以下用户的输入，将输入改写成JSON格式，对应的JSON Schema如下：'''
