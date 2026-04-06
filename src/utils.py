@@ -14,7 +14,7 @@ class LLMConfig:
 
 class OpenAIModel:
     '''call llm through openai api'''
-    def __init__(self, llmconfig:LLMConfig, max_new_tokens = 1024, temp:float=0):
+    def __init__(self, llmconfig:LLMConfig, max_new_tokens = 1024, temp:float=0.8):
         self.api_key = llmconfig.api_key
         self.model = llmconfig.llm_name
         self.is_reasoning = llmconfig.is_reasoning

@@ -8,9 +8,9 @@ from prompt_template import system_template
 load_dotenv()
 
 llm = ChatOpenAI(
-    model = os.getenv("LLM_MODEL_ID"),
-    api_key = os.getenv("LLM_API_KEY"),
-    base_url = os.getenv("LLM_BASE_URL"),
+    model = os.getenv("AGENT_MODEL_ID"),
+    api_key = os.getenv("AGENT_API_KEY"),
+    base_url = os.getenv("AGENT_BASE_URL"),
     temperature = 0.8,
     timeout = 40,
     streaming=True,
@@ -22,10 +22,12 @@ long_term_preferences = """
 """
 recent_history = """
 用户最近吃了：
+- 2026-04-06 吃了：牛肉棒
 - 2026-04-01 吃了：烤肉，米饭
 - 2026-03-31 吃了：烤菠菜，披萨
 - 2026-03-30 吃了：猪扒波奇饭
 - 2026-03-29 吃了：杀猪粉
+- 2026-03-28 吃了：牛肉面
 """
 
 chat_prompt = ChatPromptTemplate.from_messages([
