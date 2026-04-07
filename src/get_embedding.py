@@ -3,7 +3,6 @@ import re
 from langchain_core.documents import Document
 from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
-from langchain_huggingface import HuggingFaceEmbeddings  # 免费方案
 from dotenv import load_dotenv
 import os
 
@@ -69,13 +68,16 @@ def extract_metadata(recipe: dict) -> dict:
     # 解析难度（将星星转换为数值）
     difficulty_stars = recipe.get('difficulty', '')
     difficulty_level = len(difficulty_stars) if '★' in difficulty_stars else 0
+
+    key_ingredients = recipe.get('key_ingredients', '')
+    key_ingredients = [ing.strip() for ing in key_ingredients.split(',')] if key_ingredients else []
         
     return {
         "id": recipe.get('id', ''),
         "dish_name": recipe.get('dish_name', ''),
         "description": recipe.get('description', ''),
         "difficulty_level": difficulty_level,  # 1-5 数值，便于过滤
-        "key_ingredients": recipe.get('key_ingredients', ''),
+        "key_ingredients": key_ingredients,
         "source_file": "recipes.json"
     }
 
@@ -83,8 +85,7 @@ def extract_metadata(recipe: dict) -> dict:
 
 def create_recipe_vector_store(
     json_file_path: str,
-    persist_directory: str = "./recipe_db",
-    use_openai: bool = True
+    persist_directory: str = "./recipe_db"
 ):
     """创建菜谱向量数据库"""
     
@@ -94,22 +95,13 @@ def create_recipe_vector_store(
     print(f"加载了 {len(documents)} 个菜谱")
 
     
-    # 3. 选择 Embedding 模型
-    if use_openai:
-        # 方案A：OpenAI（效果好，需 API Key）
-        embeddings = OpenAIEmbeddings(
-            model=os.getenv("EMBEDDING_MODEL_ID"),
-            api_key=os.getenv("EMBEDDING_API_KEY"),
-            base_url=os.getenv("EMBEDDING_BASE_URL"),
-            dimensions=1024
-        )
-    else:
-        # 方案B：本地 HuggingFace 模型（免费）
-        embeddings = HuggingFaceEmbeddings(
-            model_name="BAAI/bge-small-zh-v1.5",  # 中文优化
-            model_kwargs={'device': 'cpu'},
-            encode_kwargs={'normalize_embeddings': True}
-        )
+    # 3. 选择 Embedding 模型：OpenAI
+    embeddings = OpenAIEmbeddings(
+        model=os.getenv("EMBEDDING_MODEL_ID"),
+        api_key=os.getenv("EMBEDDING_API_KEY"),
+        base_url=os.getenv("EMBEDDING_BASE_URL"),
+        dimensions=1024
+    )
     
     # 4. 创建向量库
     vector_store = Chroma.from_documents(
@@ -126,14 +118,13 @@ def create_recipe_vector_store(
 if __name__ == "__main__":
     # 创建向量库
     vector_store = create_recipe_vector_store(
-        json_file_path="./recipes.json",  # 你的 JSON 文件路径
-        persist_directory="./recipe_db",
-        use_openai=True
+        json_file_path="./data/recipes.json",
+        persist_directory="./recipe_db"
     )
     
     # 测试检索
     results = vector_store.similarity_search(
-        "想吃不辣的鸡", 
+        "想吃清淡的鸡", 
         k=5
     )
     
