@@ -1,16 +1,9 @@
 import json
 import os
 from datetime import datetime
-from typing import Optional, List, Dict
-from dotenv import load_dotenv
-from langchain.tools import tool
 from langchain_openai import ChatOpenAI
-from langchain.agents import create_react_agent, AgentExecutor
-from langchain.prompts import PromptTemplate
-from langchain.memory import ConversationBufferMemory
-from langchain_core.messages import SystemMessage
+from dotenv import load_dotenv
 
-load_dotenv()
 
 # =========== 用户记忆管理器 ===========
 class UserMemoryManager:
@@ -34,7 +27,6 @@ class UserMemoryManager:
                 return json.load(f)
         
         # 初始化默认记忆结构
-        os.makedirs(self.memory_path, exist_ok=True)
         memory_temlpate = {
             "user_id": self.user_id,
             "preferences": {
@@ -80,9 +72,20 @@ class UserMemoryManager:
         
         return preference_text, recent_text
     
-    def update_from_conversation(self, conversation_text: str, llm):
+    def update_from_conversation(self, conversation_text: str):
         """从对话中提取并更新用户偏好（可选，调用 LLM 提取）"""
         
+        load_dotenv()
+
+        llm = ChatOpenAI(
+            model = os.getenv("AGENT_MODEL_ID"),
+            api_key = os.getenv("AGENT_API_KEY"),
+            base_url = os.getenv("AGENT_BASE_URL"),
+            temperature = 0.8,
+            timeout = 40,
+            streaming=True,
+        )
+
         prompt = f"""从以下对话中提取用户的饮食偏好变化，只输出 JSON。
 
 对话：
@@ -101,18 +104,30 @@ class UserMemoryManager:
 
 只输出 JSON，不要其他内容。更新后的偏好应该是现有偏好的基础上进行增量更新或者对现有偏好的纠正。"""
         
-        try:
-            response = llm.invoke(prompt)
-            new_prefs = json.loads(response.content)
+        # try:
+        #     response = llm.invoke(prompt)
+        #     new_prefs = json.loads(response.content)
             
-            # 合并新偏好
-            self.memory["preferences"] = new_prefs
+        #     # 合并新偏好
+        #     self.memory["preferences"] = new_prefs
             
-            self._save()
-        except Exception as e:
-            print(f"更新偏好失败: {e}")
+        #     self._save()
+        # except Exception as e:
+        #     print(f"更新偏好失败: {e}")
+
+        response = llm.invoke(prompt)
+        response_text = response.content.strip()
+        if "```json" in response.content:
+            response_text = response.content.split("```json")[-1].split("```")[0].strip()
+        response_text = response_text.replace("```", "").strip()
+        new_prefs = json.loads(response_text)
+        
+        # 合并新偏好
+        self.memory["preferences"] = new_prefs
+        
+        self._save()
     
-    def add_recent_meal(self, dish_name: str):
+    def add_recent_meal(self, dish_list: list[str]):
         """添加近期饮食记录"""
         today = datetime.now().strftime("%Y-%m-%d")
         
@@ -121,13 +136,14 @@ class UserMemoryManager:
         if recent and recent[0]["date"] == today:
             # 今天已有记录，合并
             existing = recent[0]["dish"]
-            if dish_name not in existing:
-                recent[0]["dish"] = f"{existing}，{dish_name}"
+            for dish_name in dish_list:
+                if dish_name not in existing:
+                    recent[0]["dish"] = f"{existing}，{dish_name}"
         else:
             # 新增记录
             recent.insert(0, {
                 "date": today,
-                "dish": dish_name
+                "dish": ", ".join(dish_list)
             })
         
         # 只保留最近30条记录
@@ -145,116 +161,26 @@ class UserMemoryManager:
             self._save()
 
 
-# =========== 定义工具 ===========
-@tool
-def search_recipes(query: str) -> str:
-    """执行基础菜谱搜索。
-    
-    Args:
-        query: 搜索关键词，如'麻辣香锅'、'宫保鸡丁'
-    """
-    # 这里是你的实际检索逻辑
-    return f"找到关于'{query}'的菜谱：麻辣香锅、麻婆豆腐"
+if __name__ == "__main__":
+    user_memory = UserMemoryManager("test123")
+    print(user_memory.memory)
 
-@tool
-def search_recipes_with_filters(query: str, difficulty: int = None, ingredients: list = None) -> str:
-    """执行菜谱搜索，支持按难度和食材过滤。
-    
-    Args:
-        query: 搜索关键词
-        difficulty: 难度级别，1简单，2中等，3困难
-        ingredients: 必须包含的食材列表
-    """
-    return f"找到符合条件（难度{difficulty}，食材{ingredients}）的菜谱：宫保鸡丁"
-
-@tool
-def web_search(query: str) -> str:
-    """从网络搜索菜谱，仅当本地找不到时使用。
-    
-    Args:
-        query: 要搜索的菜名
-    """
-    return f"网络搜索到'{query}'的做法：..."
-
-# =========== 创建带记忆的 Agent ===========
-class RecipeAgent:
-    def __init__(self, user_id: str, vector_store=None):
-        self.user_id = user_id
-        self.vector_store = vector_store
-        self.memory_manager = UserMemoryManager(user_id)
-        
-        # 初始化 LLM
-        self.llm = ChatOpenAI(
-            model="deepseek-chat",
-            openai_api_key=os.getenv("DEEPSEEK_API_KEY"),
-            openai_api_base=os.getenv("DEEPSEEK_BASE_URL"),
-            temperature=0.3
-        )
-        
-        # 会话记忆（用于多轮对话）
-        self.conversation_memory = ConversationBufferMemory(
-            memory_key="chat_history",
-            return_messages=True,
-            output_key="output"
-        )
-        
-        # 记录本次对话的推荐菜品（用于结束时更新记忆）
-        self.recommended_dishes = []
-        
-        # 创建 Agent
-        self.agent_executor = self._create_agent()
-    
-    def _create_agent(self):
-        """创建带用户画像的 Agent"""
-        
-        # 获取用户画像上下文
-        user_context = self.memory_manager.get_system_context()
-        
-        # 构建完整的系统提示词
-        system_prompt = f"""你是一个专业的菜谱推荐助手。
-
-{user_context}
-
-你可以使用以下工具：
-- search_recipes: 基础菜谱搜索
-- search_recipes_with_filters: 带过滤条件的搜索
-- web_search: 网络搜索（仅当本地找不到时使用）
-
-使用规则：
-1. 推荐菜品时必须考虑用户的口味偏好和忌口
-2. 避免推荐用户最近吃过的菜品
-3. 如果用户表达了新的偏好（如"我不吃XX"、"我喜欢XX"），记住并在后续推荐中应用
-
-回答要清晰、友好，推荐菜品时说明理由。"""
-        
-        # 定义工具列表
-        tools = [search_recipes, search_recipes_with_filters, web_search]
-        
-        # ReAct 提示词模板
-        react_prompt = PromptTemplate.from_template("""
-{system_prompt}
-
-工具：{tools}
-工具名称：{tool_names}
-
-使用以下格式：
-Question: 用户的问题
-Thought: 思考要做什么
-Action: 工具名称
-Action Input: 工具的输入（JSON格式）
-Observation: 工具返回的结果
-... (重复)
-Thought: 我知道答案了
-Final Answer: 给用户的最终回答
-
-开始！
-
-Question: {input}
-Thought: {agent_scratchpad}
-""")
-        
-        # 创建 Agent
-        agent = create_react_agent(
-            llm=self.llm,
-            tools=tools,
-            prompt=react_prompt.partial(system_prompt=
+    # print("偏好文本：", pref_text)
+    # print("近期饮食：", recent_text)
+    # print("手动添加新偏好：喜欢辣口")
+    # user_memory.add_preference("tastes", "辣口")
+    # print("更新后偏好：", user_memory.memory["preferences"])
+    # print("添加今日饮食：咖喱鸡扒蛋包饭")
+    # user_memory.add_recent_meal(["咖喱鸡扒蛋包饭"])
+    # pref_text, recent_text = user_memory.get_system_context()
+    # print("更新后近期饮食：", recent_text)
+    # print("更新后偏好：", user_memory.memory["preferences"])
+    conversation = '''
+用户：我最近想吃点清淡的东西，不太想吃辣的了。
+助手：好的，我会记住你现在喜欢清淡口味，暂时不喜欢辣的了。还有其他口味或者饮食习惯需要我记住吗？
+用户：嗯，还有我最近发现牛奶过敏。
+'''
+    user_memory.update_from_conversation(conversation_text=conversation)
+    pref_text, recent_text = user_memory.get_system_context()
+    print("更新后偏好：", pref_text)
+    print("更新后近期饮食：", recent_text)
