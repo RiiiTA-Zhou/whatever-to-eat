@@ -3,14 +3,14 @@ import requests
 from bs4 import BeautifulSoup
 import trafilatura  # 专门用于提取网页正文
 
-def web_search(query: str, max_results: int = 5) -> str:
+def ddg_search(query: str, max_results: int = 5) -> str:
     """搜索并获取完整网页内容"""
     
     results = []
     
     # 1. 先用 DuckDuckGo 搜索，获取 URL
     with DDGS() as ddgs:
-        search_results = list(ddgs.text(f"{query} 菜谱 做法", max_results=max_results))
+        search_results = list(ddgs.text(f"{query} 菜谱 做法", max_results=max_results, safesearch="on", region="wt-wt", time="y"))
     
     for i, sr in enumerate(search_results, 1):
         title = sr.get("title", "")
@@ -100,4 +100,4 @@ def format_search_results(results: list) -> str:
 
 if __name__ == "__main__":
     query = "清淡的鸡肉菜谱"
-    print(web_search(query))
+    print(ddg_search(query))
