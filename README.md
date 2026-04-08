@@ -33,9 +33,15 @@ pip install -r requirements.txt
 创建 `.env` 文件：
 
 ```env
-AGENT_MODEL_ID=your_model_id
-AGENT_API_KEY=your_api_key
-AGENT_BASE_URL=your_base_url
+# agent 相关配置
+AGENT_API_KEY=your-api-key
+AGENT_MODEL_ID=your-model
+AGENT_BASE_URL=your-url
+
+# embedding 相关配置
+EMBEDDING_API_KEY=your-api-key-for-embedding
+EMBEDDING_MODEL_ID="text-embedding-3-large"
+EMBEDDING_BASE_URL=embedding-url
 ```
 
 ### 运行
