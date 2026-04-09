@@ -8,3 +8,7 @@ openai
 ddgs
 bs4
 trafilatura
+fastapi
+uvicorn[standard]
+gradio
+sseclient-py

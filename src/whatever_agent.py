@@ -176,39 +176,77 @@ class RecipeAgent:
             checkpointer=self.checkpointer
         )
 
-    def chat(self, user_input: str, is_streaming: bool = True) -> None:
+    # def chat(self, user_input: str, is_streaming: bool = True) -> None:
+    #     """多轮对话"""
+
+    #     # 记录用户输入
+    #     self.conversation_history.append({"role": "user", "content": user_input})
+
+    #     if not is_streaming:
+    #         response = self.agent.invoke(
+    #             {"messages": [{"role": "user", "content": user_input}]},
+    #             self.config)
+
+    #         assistant_msg = response['messages'][-1].content
+    #         print(assistant_msg)
+    #         # 记录助手回复
+    #         self.conversation_history.append({"role": "assistant", "content": assistant_msg})
+    #         # 刷新系统提示词（下次对话生效）
+    #         self._refresh_system_prompt()
+    #     else:
+    #         full_response = ""
+    #         for chunk in self.agent.stream(
+    #             {"messages": [{"role": "user", "content": user_input}]},
+    #             self.config,
+    #             stream_mode="updates"
+    #         ):
+    #             for _, data in chunk.items():
+    #                 content = data['messages'][-1].content_blocks[0]["text"]
+    #                 print(content, end="", flush=True)
+    #                 full_response += content
+    #         print()  # 新行
+    #         # 记录助手回复
+    #         self.conversation_history.append({"role": "assistant", "content": full_response})
+    #         # 刷新系统提示词（下次对话生效）
+    #         self._refresh_system_prompt()
+
+    def chat(self, user_input: str, is_streaming: bool = True):
         """多轮对话"""
 
         # 记录用户输入
         self.conversation_history.append({"role": "user", "content": user_input})
 
-        if not is_streaming:
-            response = self.agent.invoke(
-                {"messages": [{"role": "user", "content": user_input}]},
-                self.config)
-
-            assistant_msg = response['messages'][-1].content
-            print(assistant_msg)
-            # 记录助手回复
-            self.conversation_history.append({"role": "assistant", "content": assistant_msg})
-            # 刷新系统提示词（下次对话生效）
-            self._refresh_system_prompt()
-        else:
+        if is_streaming:
             full_response = ""
             for chunk in self.agent.stream(
                 {"messages": [{"role": "user", "content": user_input}]},
                 self.config,
-                stream_mode="updates"
+                stream_mode="messages",
+                stream_subgraphs=True
             ):
-                for _, data in chunk.items():
-                    content = data['messages'][-1].content_blocks[0]["text"]
-                    print(content, end="", flush=True)
-                    full_response += content
-            print()  # 新行
+                if isinstance(chunk, tuple):
+                    token, metadata = chunk
+                    if token and token.content:
+                        full_response += token.content
+                        yield token.content
+
+                # 记录助手回复
+                self.conversation_history.append({"role": "assistant", "content": full_response})
+                # 刷新系统提示词（下次对话生效）
+                self._refresh_system_prompt()
+            
+        else:
+            response = self.agent.invoke(
+            {"messages": [{"role": "user", "content": user_input}]},
+            self.config
+        )
+            assistant_msg = response['messages'][-1].content
             # 记录助手回复
-            self.conversation_history.append({"role": "assistant", "content": full_response})
+            self.conversation_history.append({"role": "assistant", "content": assistant_msg})
             # 刷新系统提示词（下次对话生效）
             self._refresh_system_prompt()
+            return assistant_msg
+            
 
 
 if __name__ == "__main__":
@@ -216,7 +254,7 @@ if __name__ == "__main__":
     print("欢迎使用随便 Agent！今天吃什么？")
     print("=" * 40)
 
-    # 假装登录/注册
+    # 登录/注册
     while True:
         print("\n请选择：")
         print("1. 登录（已有账号）")
@@ -244,6 +282,7 @@ if __name__ == "__main__":
         else:
             print("无效选项，请重新输入。")
 
+    # Agent 初始化
     agent = RecipeAgent(user_id=user_id, llm=llm, tools=tools)
     print("\n" + "=" * 40)
     print("开始对话吧！输入 exit 或 quit 退出程序。")
@@ -255,4 +294,13 @@ if __name__ == "__main__":
             print("Bye bye~")
             break
 
-        agent.chat(user_input)
+        print("AI：", end="", flush=True)
+        
+        # 使用流式模式
+        try:
+            for chunk in agent.chat(user_input):
+                print(chunk, end="", flush=True)
+            print("\n\n")  # 换行
+        except:
+            response = agent.chat(user_input, is_streaming = False)
+            print(response)

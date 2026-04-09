@@ -1,8 +1,8 @@
 # 随便：菜谱智能推荐agent
 
-**"随便" Agent —— 你的专属美食推荐小助手，让选择困难症成为历史！**
-
-每天都在纠结"今天吃什么"？别慌，随便 Agent 来拯救你。它记得你的口味，懂你的偏好，还能从本地菜谱库和网络帮你找到最适合今天的那道菜。
+🤖：今天吃什么？
+😴：随便……
+🤖：不要随便了！我来给你推荐今天吃什么！
 
 ## 核心功能
 
@@ -19,6 +19,17 @@
 ### 营养搭配
 - 推荐不仅考虑口味，还注重荤素搭配和营养均衡
 - 根据你的厨艺水平推荐合适难度的菜谱
+
+## API 接口
+
+启动 API 服务后可通过以下接口调用：
+
+| 接口 | 方法 | 说明 |
+|------|------|------|
+| `/register` | POST | 注册新用户 |
+| `/chat` | POST | 流式对话（返回 SSE） |
+| `/chat_sync` | POST | 同步对话 |
+| `/history/{user_id}` | GET | 获取对话历史 |
 
 ## Implementation
 
@@ -46,17 +57,39 @@ EMBEDDING_BASE_URL=embedding-url
 
 ### 运行
 
+> **重要**：所有命令需在项目根目录（`whatever-to-eat/`）下执行，不要进入 `src/` 目录。
+
+#### 命令行模式
+
 ```bash
-cd src
-python whatever_agent.py
+cd whatever-to-eat
+python src/whatever_agent.py
 ```
+
+#### API 服务模式
+
+```bash
+cd whatever-to-eat
+uvicorn src.api:app --reload --port 8000
+```
+
+#### Gradio Web 界面
+
+```bash
+cd whatever-to-eat
+python src/web_demo.py
+```
+
+访问 http://localhost:7860
 
 ### 目录结构
 
 ```
 whatever-to-eat/
 ├── src/
-│   ├── whatever_agent.py      # Agent 主入口
+│   ├── whatever_agent.py      # Agent 主入口（CLI）
+│   ├── api.py                 # FastAPI 后端服务
+│   ├── web_demo.py            # Gradio 前端界面
 │   ├── user_memory.py        # 用户记忆管理
 │   ├── prompt_template.py    # 系统提示词模板
 │   ├── recipe_retrieval_tool.py  # 本地向量库搜索
