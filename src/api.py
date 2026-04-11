@@ -1,6 +1,7 @@
 import os
 import sys
 from pathlib import Path
+from urllib.parse import quote
 
 # 将 src 目录添加到 Python 路径
 sys.path.insert(0, str(Path(__file__).parent))
@@ -12,6 +13,22 @@ from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
 from whatever_agent import RecipeAgent, llm, tools
+
+
+# =========== Agent 缓存（每个用户一个实例） ===========
+
+agent_cache: dict[str, RecipeAgent] = {}
+
+
+def get_or_create_agent(user_id: str) -> RecipeAgent:
+    """获取或创建用户对应的 agent 实例"""
+    if user_id not in agent_cache:
+        agent_cache[user_id] = RecipeAgent(
+            user_id=user_id,
+            llm=llm,
+            tools=tools
+        )
+    return agent_cache[user_id]
 
 
 # =========== Pydantic Models ===========
@@ -74,12 +91,12 @@ async def chat(req: ChatRequest):
     if not req.message.strip():
         raise HTTPException(status_code=400, detail="message cannot be empty")
 
-    agent = RecipeAgent(user_id=req.user_id, llm=llm, tools=tools)
+    agent = get_or_create_agent(req.user_id)
 
     def generate():
         for token in agent.chat(req.message, is_streaming=True):
             if token:
-                yield f"data: {token}\n\n"
+                yield f"data: {quote(token, safe='')}\n\n"
 
     return StreamingResponse(
         generate(),
@@ -94,7 +111,7 @@ async def chat_sync(req: ChatRequest):
     if not req.message.strip():
         raise HTTPException(status_code=400, detail="message cannot be empty")
 
-    agent = RecipeAgent(user_id=req.user_id, llm=llm, tools=tools)
+    agent = get_or_create_agent(req.user_id)
     response = agent.chat(req.message, is_streaming=False)
 
     return ChatResponse(user_id=req.user_id, response=response)

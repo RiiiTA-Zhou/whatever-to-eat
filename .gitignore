@@ -3,3 +3,4 @@
 *.png
 *.jpeg
 .vscode/*
+user_history/*

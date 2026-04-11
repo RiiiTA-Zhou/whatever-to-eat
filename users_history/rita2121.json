@@ -1,10 +1,16 @@
 {
-    "user_id": "rita2121",
-    "preferences": {
-        "tastes": [],
-        "dislikes": [],
-        "avoid": [],
-        "difficulty_preference": null
-    },
-    "recent_meals": []
+  "user_id": "rita2121",
+  "preferences": {
+    "tastes": [
+      "简单方便",
+      "快手菜",
+      "一人食"
+    ],
+    "dislikes": [
+      "韭菜"
+    ],
+    "avoid": [],
+    "difficulty_preference": null
+  },
+  "recent_meals": []
 }

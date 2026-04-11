@@ -109,6 +109,7 @@ class RecipeAgent:
         - 用户说不想吃某种食物了/不喜欢某口味了时
         - 用户提到过敏或忌口时
         - 用户确认了今天/这顿要吃的具体菜品时
+        - 用户表达了新的难度偏好时，如想做更简单方便的菜、想挑战难度更高的菜
         注意：如果用户只是问问题、闲聊，不需要调用此工具。"""
         )
 
@@ -176,40 +177,6 @@ class RecipeAgent:
             checkpointer=self.checkpointer
         )
 
-    # def chat(self, user_input: str, is_streaming: bool = True) -> None:
-    #     """多轮对话"""
-
-    #     # 记录用户输入
-    #     self.conversation_history.append({"role": "user", "content": user_input})
-
-    #     if not is_streaming:
-    #         response = self.agent.invoke(
-    #             {"messages": [{"role": "user", "content": user_input}]},
-    #             self.config)
-
-    #         assistant_msg = response['messages'][-1].content
-    #         print(assistant_msg)
-    #         # 记录助手回复
-    #         self.conversation_history.append({"role": "assistant", "content": assistant_msg})
-    #         # 刷新系统提示词（下次对话生效）
-    #         self._refresh_system_prompt()
-    #     else:
-    #         full_response = ""
-    #         for chunk in self.agent.stream(
-    #             {"messages": [{"role": "user", "content": user_input}]},
-    #             self.config,
-    #             stream_mode="updates"
-    #         ):
-    #             for _, data in chunk.items():
-    #                 content = data['messages'][-1].content_blocks[0]["text"]
-    #                 print(content, end="", flush=True)
-    #                 full_response += content
-    #         print()  # 新行
-    #         # 记录助手回复
-    #         self.conversation_history.append({"role": "assistant", "content": full_response})
-    #         # 刷新系统提示词（下次对话生效）
-    #         self._refresh_system_prompt()
-
     def chat(self, user_input: str, is_streaming: bool = True):
         """多轮对话"""
 
@@ -221,19 +188,19 @@ class RecipeAgent:
             for chunk in self.agent.stream(
                 {"messages": [{"role": "user", "content": user_input}]},
                 self.config,
-                stream_mode="messages",
-                stream_subgraphs=True
+                stream_mode="messages"
             ):
                 if isinstance(chunk, tuple):
                     token, metadata = chunk
                     if token and token.content:
                         full_response += token.content
                         yield token.content
-
-                # 记录助手回复
-                self.conversation_history.append({"role": "assistant", "content": full_response})
-                # 刷新系统提示词（下次对话生效）
-                self._refresh_system_prompt()
+                        
+            yield "\n"  # 最后换行
+            # 记录助手回复
+            self.conversation_history.append({"role": "assistant", "content": full_response})
+            # 刷新系统提示词（下次对话生效）
+            self._refresh_system_prompt()
             
         else:
             response = self.agent.invoke(
