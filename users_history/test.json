@@ -1,0 +1,10 @@
+{
+    "user_id": "test",
+    "preferences": {
+        "tastes": [],
+        "dislikes": [],
+        "avoid": [],
+        "difficulty_preference": null
+    },
+    "recent_meals": []
+}

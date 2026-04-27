@@ -3,7 +3,9 @@ import requests
 import re
 from urllib.parse import unquote
 
-API_BASE = "http://localhost:8000"
+import os
+
+API_BASE = os.getenv("API_BASE_URL", "http://localhost:8000")
 
 
 def post_process_tool_output(text: str) -> str:
@@ -58,19 +60,25 @@ def post_process_tool_output(text: str) -> str:
 
 
 def register_user(user_id):
-    """Register a new user"""
+    """Register a new user and load preferences"""
     if not user_id.strip():
-        return "错误: 请输入用户ID"
+        return "错误: 请输入用户ID", "", "", "", 3, ""
 
     try:
         resp = requests.post(f"{API_BASE}/register", json={"user_id": user_id})
         data = resp.json()
         if resp.status_code == 200:
-            return f"✓ {data['message']}"
+            status = f"✓ {data['message']}"
         else:
-            return f"错误: {data.get('detail', '注册失败')}"
+            status = f"错误: {data.get('detail', '注册失败')}"
+            return status, "", "", "", 3, ""
     except requests.exceptions.ConnectionError:
-        return "错误: 无法连接到API服务，请确保 api.py 已启动"
+        status = "错误: 无法连接到API服务，请确保 api.py 已启动"
+        return status, "", "", "", 3, ""
+
+    # Load preferences after register/login
+    tastes, dislikes, avoid, difficulty, recent = load_preferences(user_id)
+    return status, tastes, dislikes, avoid, difficulty, recent
 
 
 def chat(user_id, message, history):
@@ -132,6 +140,74 @@ def clear_chat():
     return []
 
 
+def load_preferences(user_id):
+    """从API加载用户偏好"""
+    if not user_id.strip():
+        return "", "", "", 3, ""
+    try:
+        resp = requests.get(f"{API_BASE}/memory/{user_id}")
+        if resp.status_code == 200:
+            data = resp.json()
+            prefs = data.get("preferences", {})
+            tastes = "，".join(prefs.get("tastes", []))
+            dislikes = "，".join(prefs.get("dislikes", []))
+            avoid = "，".join(prefs.get("avoid", []))
+            difficulty = prefs.get("difficulty_preference") or 3
+            recent = ""
+            for meal in data.get("recent_meals", []):
+                recent += f"{meal['date']}: {meal['dish']}\n"
+            return tastes, dislikes, avoid, difficulty, recent.strip()
+        else:
+            return "", "", "", 3, ""
+    except Exception as e:
+        print(f"加载偏好失败: {e}")
+        return "", "", "", 3, ""
+
+
+def parse_recent_meals(text: str) -> list:
+    """将近期饮食文本解析为结构化列表"""
+    meals = []
+    for line in text.strip().split("\n"):
+        line = line.strip()
+        if not line:
+            continue
+        if ":" in line:
+            date, dish = line.split(":", 1)
+            meals.append({"date": date.strip(), "dish": dish.strip()})
+        else:
+            # 没有日期，使用今日日期
+            from datetime import datetime
+            meals.append({"date": datetime.now().strftime("%Y-%m-%d"), "dish": line})
+    return meals
+
+
+def save_preferences(user_id, tastes, dislikes, avoid, difficulty, recent):
+    """保存用户偏好到API"""
+    if not user_id.strip():
+        return "请先输入用户ID"
+    try:
+        tastes_list = [t.strip() for t in tastes.replace("，", ",").split(",") if t.strip()]
+        dislikes_list = [d.strip() for d in dislikes.replace("，", ",").split(",") if d.strip()]
+        avoid_list = [a.strip() for a in avoid.replace("，", ",").split(",") if a.strip()]
+
+        payload = {
+            "preferences": {
+                "tastes": tastes_list,
+                "dislikes": dislikes_list,
+                "avoid": avoid_list,
+                "difficulty_preference": int(difficulty) if difficulty else None
+            },
+            "recent_meals": parse_recent_meals(recent)
+        }
+        resp = requests.post(f"{API_BASE}/memory/{user_id}", json=payload)
+        if resp.status_code == 200:
+            return "✓ 偏好已保存"
+        else:
+            return f"错误: {resp.json().get('detail', '保存失败')}"
+    except requests.exceptions.ConnectionError:
+        return "错误: 无法连接到API服务"
+
+
 def check_connection():
     """Check if API is running"""
     try:
@@ -159,14 +235,40 @@ with gr.Blocks(title="随便吃 Agent") as demo:
                 label="用户ID",
                 placeholder="输入你的用户ID"
             )
-            register_btn = gr.Button("注册/登录", variant="primary")
+            with gr.Row():
+                register_btn = gr.Button("注册/登录", variant="primary")
+                load_btn = gr.Button("加载偏好")
+
             status_text = gr.HTML('<div class="status-bar">状态: 未连接</div>')
 
-            register_btn.click(
-                fn=register_user,
-                inputs=[user_id_input],
-                outputs=[status_text]
-            )
+            with gr.Accordion("用户偏好设置", open=True):
+                tastes_input = gr.Textbox(
+                    label="喜欢的口味",
+                    placeholder="例: 清淡, 鲜香, 辣",
+                    lines=2
+                )
+                dislikes_input = gr.Textbox(
+                    label="不喜欢的食物",
+                    placeholder="例: 太油腻的, 内脏",
+                    lines=2
+                )
+                avoid_input = gr.Textbox(
+                    label="忌口/过敏",
+                    placeholder="例: 牛奶, 海鲜",
+                    lines=2
+                )
+                difficulty_slider = gr.Slider(
+                    minimum=1, maximum=5, step=1, value=3,
+                    label="菜谱难度偏好",
+                    info="1=新手小白 → 5=专业大厨"
+                )
+                recent_display = gr.Textbox(
+                    label="近期饮食记录（每行格式：日期: 菜品，或直接输入菜品）",
+                    placeholder="例：2026-04-27: 宫保鸡丁，米饭\n或直接输入：宫保鸡丁，米饭",
+                    lines=4
+                )
+                save_btn = gr.Button("💾 保存偏好", variant="secondary")
+                save_status = gr.HTML("")
 
             gr.HTML("<hr>")
             gr.HTML("**使用说明**<br>1. 输入用户ID点击注册<br>2. 在下方输入你想吃的东西<br>3. AI会帮你推荐和搜索菜谱")
@@ -181,6 +283,24 @@ with gr.Blocks(title="随便吃 Agent") as demo:
             with gr.Row():
                 send_btn = gr.Button("发送", variant="primary")
                 clear_btn = gr.Button("清空对话")
+
+    register_btn.click(
+        fn=register_user,
+        inputs=[user_id_input],
+        outputs=[status_text, tastes_input, dislikes_input, avoid_input, difficulty_slider, recent_display]
+    )
+
+    load_btn.click(
+        fn=load_preferences,
+        inputs=[user_id_input],
+        outputs=[tastes_input, dislikes_input, avoid_input, difficulty_slider, recent_display]
+    )
+
+    save_btn.click(
+        fn=save_preferences,
+        inputs=[user_id_input, tastes_input, dislikes_input, avoid_input, difficulty_slider, recent_display],
+        outputs=[save_status]
+    )
 
     send_btn.click(
         fn=chat,

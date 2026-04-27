@@ -1,0 +1,29 @@
+services:
+  api:
+    build: .
+    container_name: whatever-to-eat-api
+    command: uvicorn src.api:app --reload --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app/src
+      - ./users_history:/app/users_history
+      - ./.env:/app/.env
+    environment:
+      - PYTHONPATH=/app/src
+    restart: unless-stopped
+
+  web:
+    build: .
+    container_name: whatever-to-eat-web
+    command: python src/web_demo.py
+    ports:
+      - "7860:7860"
+    depends_on:
+      - api
+    volumes:
+      - ./src:/app/src
+    environment:
+      - API_BASE_URL=http://api:8000
+      - PYTHONPATH=/app/src
+    restart: unless-stopped

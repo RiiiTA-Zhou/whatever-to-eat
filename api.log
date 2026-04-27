@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "D:\Projects\whatever-to-eat\src\api.py", line 9, in <module>
+    import uvicorn
+ModuleNotFoundError: No module named 'uvicorn'

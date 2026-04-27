@@ -1,0 +1,23 @@
+{
+  "user_id": "rita2121",
+  "preferences": {
+    "tastes": [
+      "简单方便",
+      "快手菜",
+      "一人食"
+    ],
+    "dislikes": [
+      "韭菜"
+    ],
+    "avoid": [
+      "苦瓜"
+    ],
+    "difficulty_preference": 3
+  },
+  "recent_meals": [
+    {
+      "date": "2026-04-25",
+      "dish": "清蒸鲈鱼, 椰子鸡, 米饭,  菜心"
+    }
+  ]
+}

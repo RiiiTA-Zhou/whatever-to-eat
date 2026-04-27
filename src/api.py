@@ -94,7 +94,7 @@ async def chat(req: ChatRequest):
     agent = get_or_create_agent(req.user_id)
 
     def generate():
-        for token in agent.chat(req.message, is_streaming=True):
+        for token in agent.chat_stream(req.message):
             if token:
                 yield f"data: {quote(token, safe='')}\n\n"
 
@@ -112,9 +112,45 @@ async def chat_sync(req: ChatRequest):
         raise HTTPException(status_code=400, detail="message cannot be empty")
 
     agent = get_or_create_agent(req.user_id)
-    response = agent.chat(req.message, is_streaming=False)
+    response = agent.chat(req.message)
 
     return ChatResponse(user_id=req.user_id, response=response)
+
+
+@app.get("/memory/{user_id}")
+async def get_memory(user_id: str):
+    """Get user memory/preferences"""
+    from user_memory import UserMemoryManager
+    memory_manager = UserMemoryManager(user_id)
+    return memory_manager.memory
+
+
+@app.post("/memory/{user_id}")
+async def update_memory(user_id: str, data: dict):
+    """Update user memory/preferences"""
+    from user_memory import UserMemoryManager
+    memory_manager = UserMemoryManager(user_id)
+
+    prefs = data.get("preferences", {})
+    if "tastes" in prefs:
+        memory_manager.memory["preferences"]["tastes"] = prefs["tastes"]
+    if "dislikes" in prefs:
+        memory_manager.memory["preferences"]["dislikes"] = prefs["dislikes"]
+    if "avoid" in prefs:
+        memory_manager.memory["preferences"]["avoid"] = prefs["avoid"]
+    if "difficulty_preference" in prefs:
+        memory_manager.memory["preferences"]["difficulty_preference"] = prefs["difficulty_preference"]
+
+    if "recent_meals" in data:
+        memory_manager.memory["recent_meals"] = data["recent_meals"]
+
+    memory_manager._save()
+    # Also refresh agent's system prompt if it exists
+    agent = agent_cache.get(user_id)
+    if agent:
+        agent._refresh_system_prompt()
+
+    return {"status": "ok", "message": "偏好已更新"}
 
 
 if __name__ == "__main__":

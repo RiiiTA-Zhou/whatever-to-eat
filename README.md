@@ -73,6 +73,30 @@ cd whatever-to-eat
 uvicorn src.api:app --reload --port 8000
 ```
 
+### Docker 部署
+
+确保已安装 Docker Desktop，然后在项目根目录执行：
+
+```bash
+# 构建并启动（首次运行需加 --build）
+docker compose up --build
+
+# 后台运行
+docker compose up -d
+
+# 查看日志
+docker compose logs -f
+
+# 停止容器
+docker compose down
+```
+
+启动后：
+- **API 服务** → http://localhost:8000
+- **Gradio Web 界面** → http://localhost:7860
+
+`.env` 配置文件会自动挂载到容器中。修改代码后重新构建需加 `--build`。
+
 #### Gradio Web 界面
 
 ```bash

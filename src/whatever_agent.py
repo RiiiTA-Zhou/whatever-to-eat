@@ -177,42 +177,38 @@ class RecipeAgent:
             checkpointer=self.checkpointer
         )
 
-    def chat(self, user_input: str, is_streaming: bool = True):
-        """多轮对话"""
-
-        # 记录用户输入
+    def chat_stream(self, user_input: str):
+        """流式多轮对话，返回 token 生成器"""
         self.conversation_history.append({"role": "user", "content": user_input})
 
-        if is_streaming:
-            full_response = ""
-            for chunk in self.agent.stream(
-                {"messages": [{"role": "user", "content": user_input}]},
-                self.config,
-                stream_mode="messages"
-            ):
-                if isinstance(chunk, tuple):
-                    token, metadata = chunk
-                    if token and token.content:
-                        full_response += token.content
-                        yield token.content
-                        
-            yield "\n"  # 最后换行
-            # 记录助手回复
-            self.conversation_history.append({"role": "assistant", "content": full_response})
-            # 刷新系统提示词（下次对话生效）
-            self._refresh_system_prompt()
-            
-        else:
-            response = self.agent.invoke(
+        full_response = ""
+        for chunk in self.agent.stream(
+            {"messages": [{"role": "user", "content": user_input}]},
+            self.config,
+            stream_mode="messages"
+        ):
+            if isinstance(chunk, tuple):
+                token, metadata = chunk
+                if token and token.content:
+                    full_response += token.content
+                    yield token.content
+
+        yield "\n"
+        self.conversation_history.append({"role": "assistant", "content": full_response})
+        self._refresh_system_prompt()
+
+    def chat(self, user_input: str):
+        """同步多轮对话，返回完整回复字符串"""
+        self.conversation_history.append({"role": "user", "content": user_input})
+
+        response = self.agent.invoke(
             {"messages": [{"role": "user", "content": user_input}]},
             self.config
         )
-            assistant_msg = response['messages'][-1].content
-            # 记录助手回复
-            self.conversation_history.append({"role": "assistant", "content": assistant_msg})
-            # 刷新系统提示词（下次对话生效）
-            self._refresh_system_prompt()
-            return assistant_msg
+        assistant_msg = response['messages'][-1].content
+        self.conversation_history.append({"role": "assistant", "content": assistant_msg})
+        self._refresh_system_prompt()
+        return assistant_msg
             
 
 
@@ -265,9 +261,9 @@ if __name__ == "__main__":
         
         # 使用流式模式
         try:
-            for chunk in agent.chat(user_input):
+            for chunk in agent.chat_stream(user_input):
                 print(chunk, end="", flush=True)
             print("\n\n")  # 换行
         except:
-            response = agent.chat(user_input, is_streaming = False)
+            response = agent.chat(user_input)
             print(response)
