@@ -1,0 +1,23 @@
+{
+  "user_id": "eval_user_005",
+  "preferences": {
+    "tastes": [],
+    "dislikes": [],
+    "avoid": [],
+    "difficulty_preference": null
+  },
+  "recent_meals": [
+    {
+      "date": "2026-04-29",
+      "dish": "红烧肉"
+    },
+    {
+      "date": "2026-04-28",
+      "dish": "宫保鸡丁"
+    },
+    {
+      "date": "2026-04-27",
+      "dish": "番茄炒蛋"
+    }
+  ]
+}

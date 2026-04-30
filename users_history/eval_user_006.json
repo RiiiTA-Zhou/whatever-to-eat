@@ -1,0 +1,15 @@
+{
+  "user_id": "eval_user_006",
+  "preferences": {
+    "tastes": [],
+    "dislikes": [],
+    "avoid": [],
+    "difficulty_preference": null
+  },
+  "recent_meals": [
+    {
+      "date": "2026-04-30",
+      "dish": "红烧排骨"
+    }
+  ]
+}

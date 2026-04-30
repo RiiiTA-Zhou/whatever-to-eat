@@ -1,0 +1,53 @@
+EXACT: 辣椒炒肉 -> meat_dish-辣椒炒肉
+MISSING: 白切鸡
+EXACT: 口水鸡 -> meat_dish-口水鸡
+FUZZY: 红烧肉 -> meat_dish-徽派红烧肉 (徽派红烧肉)
+FUZZY: 红烧肉 -> meat_dish-湖南家常红烧肉 (湖南家常红烧肉)
+FUZZY: 红烧肉 -> meat_dish-南派红烧肉 (南派红烧肉)
+EXACT: 回锅肉 -> meat_dish-回锅肉
+MISSING: 东坡肉
+EXACT: 宫保鸡丁 -> meat_dish-宫保鸡丁
+EXACT: 糖醋排骨 -> meat_dish-糖醋排骨
+EXACT: 鱼香肉丝 -> meat_dish-鱼香肉丝
+FUZZY: 辣子鸡 -> meat_dish-贵州辣子鸡 (贵州辣子鸡)
+MISSING: 红烧排骨
+EXACT: 水煮肉片 -> meat_dish-水煮肉片
+MISSING: 蒜泥白肉
+EXACT: 麻婆豆腐 -> meat_dish-麻婆豆腐
+MISSING: 家常豆腐
+MISSING: 红烧豆腐
+EXACT: 蒜蓉西兰花 -> vegetable_dish-蒜蓉西兰花
+EXACT: 炒青菜 -> vegetable_dish-炒青菜
+EXACT: 凉拌黄瓜 -> vegetable_dish-凉拌黄瓜
+EXACT: 凉拌木耳 -> vegetable_dish-凉拌木耳
+MISSING: 番茄蛋汤
+EXACT: 紫菜蛋花汤 -> soup-紫菜蛋花汤
+MISSING: 冬瓜排骨汤
+MISSING: 酸辣汤
+EXACT: 蛋炒饭 -> staple-蛋炒饭
+EXACT: 扬州炒饭 -> staple-扬州炒饭
+MISSING: 酱油炒饭
+MISSING: 牛肉面
+EXACT: 清蒸鲈鱼 -> aquatic-清蒸鲈鱼
+EXACT: 水煮鱼 -> aquatic-水煮鱼
+EXACT: 红烧鱼 -> aquatic-红烧鱼
+EXACT: 蒜蓉虾 -> aquatic-蒜蓉虾
+EXACT: 烤鱼 -> aquatic-烤鱼
+EXACT: 吐司果酱 -> breakfast-吐司果酱
+EXACT: 太阳蛋 -> breakfast-太阳蛋
+EXACT: 微波炉荷包蛋 -> breakfast-微波炉荷包蛋
+EXACT: 牛奶燕麦 -> breakfast-牛奶燕麦
+EXACT: 水煮玉米 -> breakfast-水煮玉米
+MISSING: 焦糖布丁
+MISSING: 红豆沙
+FUZZY: 椰奶冻 -> dessert-咖啡椰奶冻 (咖啡椰奶冻)
+MISSING: 双皮奶
+MISSING: 印度香饭
+FUZZY: 意大利面 -> staple-炒意大利面 (炒意大利面)
+EXACT: 番茄牛肉蛋花汤 -> soup-番茄牛肉蛋花汤
+EXACT: 玉米排骨汤 -> soup-玉米排骨汤
+EXACT: 燕麦鸡蛋饼 -> breakfast-燕麦鸡蛋饼
+EXACT: 手抓饼 -> breakfast-手抓饼
+EXACT: 微波炉蒸蛋 -> breakfast-微波炉蒸蛋
+EXACT: 蒸水蛋 -> breakfast-蒸水蛋
+EXACT: 微波炉蛋糕 -> breakfast-微波炉蛋糕

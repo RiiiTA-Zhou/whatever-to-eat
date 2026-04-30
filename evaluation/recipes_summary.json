@@ -1,0 +1,2138 @@
+[
+  {
+    "id": "aquatic-咖喱炒蟹",
+    "dish_name": "咖喱炒蟹",
+    "difficulty": "★★★★",
+    "key_ingredients": "肉蟹,生粉,洋葱,大蒜,咖喱块,椰浆,蛋清"
+  },
+  {
+    "id": "aquatic-响油鳝丝",
+    "dish_name": "响油鳝丝",
+    "difficulty": "★★★",
+    "key_ingredients": "鳝鱼,蒜末,姜末,葱花,猪油"
+  },
+  {
+    "id": "aquatic-微波葱姜黑鳕鱼",
+    "dish_name": "微波葱姜黑鳕鱼",
+    "difficulty": "★★★",
+    "key_ingredients": "鱼片,葱,姜,料酒,酱油,芝麻油,花生油"
+  },
+  {
+    "id": "aquatic-水煮鱼",
+    "dish_name": "水煮鱼",
+    "difficulty": "★★★★",
+    "key_ingredients": "巴沙鱼,豆瓣酱,藤椒油,花菜,生菜,大蒜,豆豉"
+  },
+  {
+    "id": "aquatic-清蒸生蚝",
+    "dish_name": "清蒸生蚝",
+    "difficulty": "★★★",
+    "key_ingredients": "生蚝,姜丝,蒜末,酱油"
+  },
+  {
+    "id": "aquatic-红烧鱼",
+    "dish_name": "红烧鱼",
+    "difficulty": "★★★★",
+    "key_ingredients": "鱼,姜,蒜,干辣椒,料酒,醋,白砂糖,酱油,小米椒,蚝油,香菜,葱花"
+  },
+  {
+    "id": "aquatic-红烧鱼头",
+    "dish_name": "红烧鱼头",
+    "difficulty": "★★★★",
+    "key_ingredients": "鱼头,葱,姜,蒜,香菜,美人椒,干辣椒,八角"
+  },
+  {
+    "id": "aquatic-红烧鲤鱼",
+    "dish_name": "红烧鲤鱼",
+    "difficulty": "★★★★",
+    "key_ingredients": "鱼,五花肉,葱,姜,蒜,干辣椒,料酒,陈醋,味极鲜,老抽,蚝油"
+  },
+  {
+    "id": "aquatic-肉蟹煲",
+    "dish_name": "肉蟹煲",
+    "difficulty": "★★★★",
+    "key_ingredients": "土豆,青椒,红椒,洋葱,年糕,螃蟹,淀粉,蒜,姜,干辣椒,冰糖,啤酒"
+  },
+  {
+    "id": "aquatic-酱炖蟹",
+    "dish_name": "酱炖蟹",
+    "difficulty": "★★★",
+    "key_ingredients": "螃蟹,菜油,姜,豆瓣酱,冰糖,葱,鸡蛋,肉末"
+  },
+  {
+    "id": "aquatic-小龙虾",
+    "dish_name": "小龙虾",
+    "difficulty": "★★★★",
+    "key_ingredients": "小龙虾,葱,姜,蒜,香叶,八角,桂皮,青花椒,花椒,子弹头辣椒,郫县豆瓣,黄豆酱,啤酒,生抽"
+  },
+  {
+    "id": "aquatic-干煎阿根廷红虾",
+    "dish_name": "干煎阿根廷红虾",
+    "difficulty": "★★★",
+    "key_ingredients": "阿根廷红虾,生姜,洋葱,香菜,大蒜,橄榄油,白葡萄酒,生抽,柠檬"
+  },
+  {
+    "id": "aquatic-油焖大虾",
+    "dish_name": "油焖大虾",
+    "difficulty": "★★★★",
+    "key_ingredients": "虾,花椒,葱,姜,黄酒,冰糖"
+  },
+  {
+    "id": "aquatic-烤鱼",
+    "dish_name": "烤鱼",
+    "difficulty": "★★★★",
+    "key_ingredients": "草鱼,大葱,大蒜,八角,香叶,桂皮,干辣椒,灯笼椒,芹菜,豆芽,千张,洋葱,火锅底料,豆瓣酱,青花椒,花生米,葱花,白芝麻,香菜"
+  },
+  {
+    "id": "aquatic-清蒸鲈鱼",
+    "dish_name": "清蒸鲈鱼",
+    "difficulty": "★★★",
+    "key_ingredients": "鲈鱼,姜,香葱,蒸鱼豉油"
+  },
+  {
+    "id": "aquatic-白灼虾",
+    "dish_name": "白灼虾",
+    "difficulty": "★★",
+    "key_ingredients": "洋葱,姜,虾,料酒,葱,蒜,酱油,芝麻,香醋"
+  },
+  {
+    "id": "aquatic-糖醋鲤鱼",
+    "dish_name": "糖醋鲤鱼",
+    "difficulty": "★★★★",
+    "key_ingredients": "鱼,面粉,淀粉,鸡蛋,番茄酱,白醋"
+  },
+  {
+    "id": "aquatic-芥末黄油罗氏虾",
+    "dish_name": "芥末黄油罗氏虾",
+    "difficulty": "★★★",
+    "key_ingredients": "罗氏虾,芥末,酱油,蚝油,香菜,蒜蓉,黄油,酒"
+  },
+  {
+    "id": "aquatic-葱油桂鱼",
+    "dish_name": "葱油桂鱼",
+    "difficulty": "★★★★",
+    "key_ingredients": "鱼,姜,小米辣,小葱,蒸鱼豉油,植物油"
+  },
+  {
+    "id": "aquatic-葱烧海参",
+    "dish_name": "葱烧海参",
+    "difficulty": "★★★",
+    "key_ingredients": "葱白,海参,蚝油,生抽,淀粉"
+  },
+  {
+    "id": "aquatic-蒜蓉虾",
+    "dish_name": "蒜蓉虾",
+    "difficulty": "★★",
+    "key_ingredients": "虾,蒜蓉酱,生抽"
+  },
+  {
+    "id": "aquatic-蒜香黄油虾",
+    "dish_name": "蒜香黄油虾",
+    "difficulty": "★★",
+    "key_ingredients": "大虾,大蒜,橄榄油,黄油,白葡萄酒,柠檬"
+  },
+  {
+    "id": "aquatic-蛏抱蛋",
+    "dish_name": "蛏抱蛋",
+    "difficulty": "★★★",
+    "key_ingredients": "蛏子,洋葱,生抽,料酒,鸡精,生粉,鸡蛋"
+  },
+  {
+    "id": "aquatic-香煎翘嘴鱼",
+    "dish_name": "香煎翘嘴鱼",
+    "difficulty": "★★★★",
+    "key_ingredients": "鱼,料酒,姜,豆瓣酱,蒜,生抽,老抽,青椒,葱,香菜"
+  },
+  {
+    "id": "aquatic-鲤鱼炖白菜",
+    "dish_name": "鲤鱼炖白菜",
+    "difficulty": "★★★",
+    "key_ingredients": "鲤鱼,娃娃菜,姜,蒜,郫县豆瓣酱,桂皮,八角,生抽,老抽"
+  },
+  {
+    "id": "aquatic-鳊鱼炖豆腐",
+    "dish_name": "鳊鱼炖豆腐",
+    "difficulty": "★★★",
+    "key_ingredients": "鳊鱼,老豆腐,姜,葱,蒜,干辣椒,香叶,八角,桂皮"
+  },
+  {
+    "id": "aquatic-黄油煎虾",
+    "dish_name": "黄油煎虾",
+    "difficulty": "★★★",
+    "key_ingredients": "鲜虾,生抽,米酒,白糖,食用油,黑胡椒,黄油"
+  },
+  {
+    "id": "breakfast-吐司果酱",
+    "dish_name": "吐司果酱",
+    "difficulty": "★",
+    "key_ingredients": "吐司,果酱"
+  },
+  {
+    "id": "breakfast-太阳蛋",
+    "dish_name": "太阳蛋",
+    "difficulty": "★★",
+    "key_ingredients": "鸡蛋"
+  },
+  {
+    "id": "breakfast-完美水煮蛋",
+    "dish_name": "完美水煮蛋",
+    "difficulty": "★★★★★",
+    "key_ingredients": "鸡蛋"
+  },
+  {
+    "id": "breakfast-微波炉荷包蛋",
+    "dish_name": "微波炉荷包蛋",
+    "difficulty": "★",
+    "key_ingredients": "鸡蛋,饮用水,芝麻油"
+  },
+  {
+    "id": "breakfast-微波炉蒸蛋",
+    "dish_name": "微波炉蒸蛋",
+    "difficulty": "★",
+    "key_ingredients": "鸡蛋,温水,高汤,生抽,香油,葱花"
+  },
+  {
+    "id": "breakfast-微波炉蛋糕",
+    "dish_name": "微波炉蛋糕",
+    "difficulty": "★",
+    "key_ingredients": "黄油,巧克力或香蕉,鸡蛋,泡打粉,面粉"
+  },
+  {
+    "id": "breakfast-意式香肠北非蛋",
+    "dish_name": "意式香肠北非蛋",
+    "difficulty": "★★★",
+    "key_ingredients": "意式猪肉香肠,洋葱,甜椒,百味来拿坡里意面酱,鸡蛋,帕马森干酪,欧芹,干辣椒碎,硬壳面包"
+  },
+  {
+    "id": "breakfast-手抓饼",
+    "dish_name": "手抓饼",
+    "difficulty": "★★",
+    "key_ingredients": "面粉,生菜,火腿,芝士片,鸡蛋"
+  },
+  {
+    "id": "breakfast-桂圆红枣粥",
+    "dish_name": "桂圆红枣粥",
+    "difficulty": "★★",
+    "key_ingredients": "桂圆肉,红枣,糯米"
+  },
+  {
+    "id": "breakfast-水煮玉米",
+    "dish_name": "水煮玉米",
+    "difficulty": "★★",
+    "key_ingredients": "玉米,玉米皮"
+  },
+  {
+    "id": "breakfast-溏心蛋",
+    "dish_name": "溏心蛋",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡蛋"
+  },
+  {
+    "id": "breakfast-煎饺",
+    "dish_name": "煎饺",
+    "difficulty": "★★",
+    "key_ingredients": "饺子,黑芝麻,葱花"
+  },
+  {
+    "id": "breakfast-燕麦鸡蛋饼",
+    "dish_name": "燕麦鸡蛋饼",
+    "difficulty": "★★",
+    "key_ingredients": "牛奶,干燕麦,鸡蛋,黄油,蔬菜"
+  },
+  {
+    "id": "breakfast-牛奶燕麦",
+    "dish_name": "牛奶燕麦",
+    "difficulty": "★",
+    "key_ingredients": "牛奶,燕麦,水,鸡蛋"
+  },
+  {
+    "id": "breakfast-空气炸锅面包片",
+    "dish_name": "空气炸锅面包片",
+    "difficulty": "★",
+    "key_ingredients": "面包片"
+  },
+  {
+    "id": "breakfast-美式炒蛋",
+    "dish_name": "美式炒蛋",
+    "difficulty": "★★",
+    "key_ingredients": "鸡蛋,黄油,牛奶"
+  },
+  {
+    "id": "breakfast-茶叶蛋",
+    "dish_name": "茶叶蛋",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡蛋,八角,香叶,桂皮,茴香,冰糖,红茶,生抽,老抽"
+  },
+  {
+    "id": "breakfast-蒸水蛋",
+    "dish_name": "蒸水蛋",
+    "difficulty": "★★",
+    "key_ingredients": "鸡蛋,水"
+  },
+  {
+    "id": "breakfast-蒸花卷",
+    "dish_name": "蒸花卷",
+    "difficulty": "★★",
+    "key_ingredients": "花卷"
+  },
+  {
+    "id": "breakfast-蛋煎糍粑",
+    "dish_name": "蛋煎糍粑",
+    "difficulty": "★★",
+    "key_ingredients": "糍粑,鸡蛋"
+  },
+  {
+    "id": "breakfast-金枪鱼酱三明治",
+    "dish_name": "金枪鱼酱三明治",
+    "difficulty": "★",
+    "key_ingredients": "金枪鱼,蛋黄酱,俄式酸黄瓜汁,吐司"
+  },
+  {
+    "id": "breakfast-韩国麻药鸡蛋",
+    "dish_name": "韩国麻药鸡蛋",
+    "difficulty": "★",
+    "key_ingredients": "鸡蛋,酱油,味淋,辣椒圈,芝麻油,葱花"
+  },
+  {
+    "id": "breakfast-鸡蛋三明治",
+    "dish_name": "鸡蛋三明治",
+    "difficulty": "★★",
+    "key_ingredients": "吐司,鸡蛋,蛋黄酱,黄油,培根"
+  },
+  {
+    "id": "breakfast-温泉蛋",
+    "dish_name": "温泉蛋",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡蛋"
+  },
+  {
+    "id": "breakfast-苏格兰蛋",
+    "dish_name": "苏格兰蛋",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡蛋,芝士片,培根片,手抓饼"
+  },
+  {
+    "id": "condiment-油酥",
+    "dish_name": "油酥",
+    "difficulty": "★★",
+    "key_ingredients": "面粉,油"
+  },
+  {
+    "id": "condiment-炸串酱料",
+    "dish_name": "炸串酱料",
+    "difficulty": "★★",
+    "key_ingredients": "辣椒粉,白芝麻,蒜末,葱末,香油,生抽,花椒油,蚝油"
+  },
+  {
+    "id": "condiment-简易版炒糖色",
+    "dish_name": "简易版炒糖色",
+    "difficulty": "★★★★",
+    "key_ingredients": "开水,油,冰糖,葱,姜,蒜,花椒"
+  },
+  {
+    "id": "condiment-糖醋汁",
+    "dish_name": "糖醋汁",
+    "difficulty": "★★",
+    "key_ingredients": "糖醋汁"
+  },
+  {
+    "id": "condiment-葱油",
+    "dish_name": "葱油",
+    "difficulty": "★★★",
+    "key_ingredients": "开洋,葱,香菜,洋葱,姜"
+  },
+  {
+    "id": "condiment-蒜香酱油",
+    "dish_name": "蒜香酱油",
+    "difficulty": "★★",
+    "key_ingredients": "蒜头,酱油,花生油"
+  },
+  {
+    "id": "condiment-油泼辣子",
+    "dish_name": "油泼辣子",
+    "difficulty": "★★★",
+    "key_ingredients": "小蒜头,小米椒,花生油,小葱,干辣椒面,白芝麻,蒜末,五香粉,草寇,白醋,白糖,味精"
+  },
+  {
+    "id": "condiment-草莓酱",
+    "dish_name": "草莓酱",
+    "difficulty": "★★",
+    "key_ingredients": "草莓"
+  },
+  {
+    "id": "condiment-蔗糖糖浆",
+    "dish_name": "蔗糖糖浆",
+    "difficulty": "★",
+    "key_ingredients": "白砂糖,饮用水"
+  },
+  {
+    "id": "dessert-胡萝卜甜糕",
+    "dish_name": "胡萝卜甜糕",
+    "difficulty": "★★★",
+    "key_ingredients": "胡萝卜,全脂牛奶,酥油,糖,小豆蔻粉,腰果,杏仁片,葡萄干"
+  },
+  {
+    "id": "dessert-反沙芋头",
+    "dish_name": "反沙芋头",
+    "difficulty": "★★★",
+    "key_ingredients": "芋头,葱花,糖"
+  },
+  {
+    "id": "dessert-咖啡椰奶冻",
+    "dish_name": "咖啡椰奶冻",
+    "difficulty": "★★★★",
+    "key_ingredients": "淡奶油,椰汁,espresso,椰子水,吉利丁"
+  },
+  {
+    "id": "dessert-奥利奥冰淇淋",
+    "dish_name": "奥利奥冰淇淋",
+    "difficulty": "★★★",
+    "key_ingredients": "奥利奥,奶油,糖"
+  },
+  {
+    "id": "dessert-戚风蛋糕",
+    "dish_name": "戚风蛋糕",
+    "difficulty": "★★★★★",
+    "key_ingredients": "鸡蛋,低筋面粉,牛奶,白糖,食用油,柠檬汁,白醋"
+  },
+  {
+    "id": "dessert-提拉米苏",
+    "dish_name": "提拉米苏",
+    "difficulty": "★★★★",
+    "key_ingredients": "蛋黄,蛋清,白砂糖,马斯卡彭芝士,朗姆酒,手指饼干,咖啡液,可可粉"
+  },
+  {
+    "id": "dessert-无厨师机蜂蜜面包",
+    "dish_name": "无厨师机蜂蜜面包",
+    "difficulty": "★★★★★",
+    "key_ingredients": "面粉,牛奶,酵母,鸡蛋,黄油,花生油,蜂蜜,芝麻"
+  },
+  {
+    "id": "dessert-炸鲜奶",
+    "dish_name": "炸鲜奶",
+    "difficulty": "★★★",
+    "key_ingredients": "牛奶,玉米淀粉,白糖,食用油,面包糠,鸡蛋"
+  },
+  {
+    "id": "dessert-烤箱版巴斯克芝士蛋糕",
+    "dish_name": "烤箱版巴斯克芝士蛋糕",
+    "difficulty": "★★",
+    "key_ingredients": "奶油奶酪,白砂糖,全蛋,蛋黄,淡奶油,低筋面粉"
+  },
+  {
+    "id": "dessert-烤蛋挞",
+    "dish_name": "烤蛋挞",
+    "difficulty": "★★★★",
+    "key_ingredients": "淡奶油,白砂糖,牛奶,蛋黄,蛋挞皮"
+  },
+  {
+    "id": "dessert-玛格丽特饼干",
+    "dish_name": "玛格丽特饼干",
+    "difficulty": "★★★",
+    "key_ingredients": "黄油,鸡蛋黄,低筋面粉,玉米淀粉"
+  },
+  {
+    "id": "dessert-红柚蛋糕",
+    "dish_name": "红柚蛋糕",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡蛋,红柚果肉,面粉"
+  },
+  {
+    "id": "dessert-芋泥雪媚娘",
+    "dish_name": "芋泥雪媚娘",
+    "difficulty": "★★★★★",
+    "key_ingredients": "芋头,牛奶,淡奶油,紫薯粉,糯米粉,玉米淀粉,黄油,淡奶油"
+  },
+  {
+    "id": "dessert-英式司康",
+    "dish_name": "英式司康",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡蛋,淡奶油,奶油奶酪,低筋面粉,泡打粉,黄油"
+  },
+  {
+    "id": "dessert-草莓冰淇淋",
+    "dish_name": "草莓冰淇淋",
+    "difficulty": "★★",
+    "key_ingredients": "草莓,糖,香草,甜炼乳,浓奶油"
+  },
+  {
+    "id": "dessert-酸奶意式奶冻",
+    "dish_name": "酸奶意式奶冻",
+    "difficulty": "★★★★",
+    "key_ingredients": "吉利丁片,淡奶油,原味酸奶"
+  },
+  {
+    "id": "dessert-雪花酥",
+    "dish_name": "雪花酥",
+    "difficulty": "★★★",
+    "key_ingredients": "饼干,无盐黄油,棉花糖,奶粉,混合坚果"
+  },
+  {
+    "id": "dessert-魔芋蛋糕",
+    "dish_name": "魔芋蛋糕",
+    "difficulty": "★★★★",
+    "key_ingredients": "鸡蛋,可可粉,魔芋粉,塔塔粉,赤藓糖醇"
+  },
+  {
+    "id": "dessert-龟苓膏",
+    "dish_name": "龟苓膏",
+    "difficulty": "★★",
+    "key_ingredients": "龟苓膏粉,白砂糖"
+  },
+  {
+    "id": "drink-B52轰炸机",
+    "dish_name": "B52轰炸机",
+    "difficulty": "★★★",
+    "key_ingredients": "甘露咖啡酒,爱尔兰百利甜酒,蓝天原味伏特加"
+  },
+  {
+    "id": "drink-Mojito莫吉托",
+    "dish_name": "Mojito莫吉托",
+    "difficulty": "★★★",
+    "key_ingredients": "青柠,薄荷叶,糖浆,金色朗姆酒,冰块,苏打水"
+  },
+  {
+    "id": "drink-冬瓜茶",
+    "dish_name": "冬瓜茶",
+    "difficulty": "★★",
+    "key_ingredients": "冬瓜,冰糖"
+  },
+  {
+    "id": "drink-印度奶茶",
+    "dish_name": "印度奶茶",
+    "difficulty": "★★",
+    "key_ingredients": "生姜,小豆蔻,肉桂棒,丁香,黑胡椒粒,红茶,全脂牛奶"
+  },
+  {
+    "id": "drink-可乐桶",
+    "dish_name": "可乐桶",
+    "difficulty": "★★",
+    "key_ingredients": "柠檬,冰块,可口可乐,威士忌"
+  },
+  {
+    "id": "drink-奶茶",
+    "dish_name": "奶茶",
+    "difficulty": "★★",
+    "key_ingredients": "红茶,奶粉,砂糖"
+  },
+  {
+    "id": "drink-杨枝甘露",
+    "dish_name": "杨枝甘露",
+    "difficulty": "★★",
+    "key_ingredients": "奇亚籽,牛奶,芒果,葡萄柚,冰块,椰奶"
+  },
+  {
+    "id": "drink-牛油果拉西",
+    "dish_name": "牛油果拉西",
+    "difficulty": "★",
+    "key_ingredients": "牛油果,酸奶,蜂蜜,牛奶,小豆蔻粉,薄荷叶,坚果"
+  },
+  {
+    "id": "drink-酸梅汤（半成品加工）",
+    "dish_name": "酸梅汤（半成品加工）",
+    "difficulty": "★",
+    "key_ingredients": "酸梅晶固体饮料,方糖,北京二锅头酒"
+  },
+  {
+    "id": "drink-长岛冰茶",
+    "dish_name": "长岛冰茶",
+    "difficulty": "★★",
+    "key_ingredients": "柠檬,金酒,龙舌兰酒,伏特加,白朗姆酒,橙味甜酒,枫糖浆,可乐,冰块"
+  },
+  {
+    "id": "drink-冰粉",
+    "dish_name": "冰粉",
+    "difficulty": "★★",
+    "key_ingredients": "冰粉籽,薄荷汁,薄荷粉,柠檬汁,山楂汁,桑椹汁,冰块"
+  },
+  {
+    "id": "drink-奇异果菠菜特调",
+    "dish_name": "奇异果菠菜特调",
+    "difficulty": "★",
+    "key_ingredients": "猕猴桃,苹果,菠菜"
+  },
+  {
+    "id": "drink-柠檬水",
+    "dish_name": "柠檬水",
+    "difficulty": "★",
+    "key_ingredients": "柠檬,果蜜,冰"
+  },
+  {
+    "id": "drink-泰国手标红茶",
+    "dish_name": "泰国手标红茶",
+    "difficulty": "★★★",
+    "key_ingredients": "茶粉,炼乳,白糖,牛奶"
+  },
+  {
+    "id": "drink-海边落日",
+    "dish_name": "海边落日",
+    "difficulty": "★★★",
+    "key_ingredients": "柠檬,红石榴糖浆,橙汁,苏打水,白朗姆酒,蓝橙力娇酒"
+  },
+  {
+    "id": "drink-百香果橙子特调",
+    "dish_name": "百香果橙子特调",
+    "difficulty": "★★★",
+    "key_ingredients": "百香果,茉莉绿茶,橙子"
+  },
+  {
+    "id": "drink-砂糖椰子冰沙",
+    "dish_name": "砂糖椰子冰沙",
+    "difficulty": "★",
+    "key_ingredients": "椰汁,咖啡调糖,坚果碎"
+  },
+  {
+    "id": "drink-耙耙柑茶",
+    "dish_name": "耙耙柑茶",
+    "difficulty": "★★",
+    "key_ingredients": "茉莉绿茶茶叶,耙耙柑果肉,蔗糖糖浆"
+  },
+  {
+    "id": "drink-菠萝咖啡特调",
+    "dish_name": "菠萝咖啡特调",
+    "difficulty": "★★★",
+    "key_ingredients": "冰块,咖啡液,菠萝汁,苏打水,奶油,朗姆酒,牛奶,海盐"
+  },
+  {
+    "id": "drink-酒酿醪糟",
+    "dish_name": "酒酿醪糟",
+    "difficulty": "★★★★",
+    "key_ingredients": "糯米,安琪甜酒曲,桂花,小米,燕麦,黄米,血糯米"
+  },
+  {
+    "id": "drink-酸梅汤",
+    "dish_name": "酸梅汤",
+    "difficulty": "★★★★",
+    "key_ingredients": "桂花,冰糖"
+  },
+  {
+    "id": "drink-金汤力",
+    "dish_name": "金汤力",
+    "difficulty": "★★",
+    "key_ingredients": "金酒,柠檬,汤力水"
+  },
+  {
+    "id": "drink-金菲士",
+    "dish_name": "金菲士",
+    "difficulty": "★★",
+    "key_ingredients": "柠檬,金酒,蔗糖糖浆,苏打气泡水"
+  },
+  {
+    "id": "meat_dish-乡村啤酒鸭",
+    "dish_name": "乡村啤酒鸭",
+    "difficulty": "★★★★",
+    "key_ingredients": "鸭肉,大葱,生姜,花椒,香料,大蒜,小米辣,啤酒,青椒,红椒,蒜苗"
+  },
+  {
+    "id": "meat_dish-冷吃兔",
+    "dish_name": "冷吃兔",
+    "difficulty": "★★★★",
+    "key_ingredients": "兔肉,干辣椒,青花椒,八角,桂皮,香叶,山奈,白蔻,小茴香,蒜,姜,小葱,大葱,洋葱,白芝麻"
+  },
+  {
+    "id": "meat_dish-可乐鸡翅",
+    "dish_name": "可乐鸡翅",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡翅,生姜,料酒,生抽,可乐,葱"
+  },
+  {
+    "id": "meat_dish-咕噜肉",
+    "dish_name": "咕噜肉",
+    "difficulty": "★★★★",
+    "key_ingredients": "梅头猪肉,青椒,菠萝,茄汁,白醋,蒜蓉,生抽,生粉,白砂糖"
+  },
+  {
+    "id": "meat_dish-商芝肉",
+    "dish_name": "商芝肉",
+    "difficulty": "★★★★★",
+    "key_ingredients": "肉,蜂蜜,醋,猪油,大葱,姜,鸡蛋皮,商芝,鸡汤,酱油,料酒,八角,味精,芝麻油"
+  },
+  {
+    "id": "meat_dish-孜然牛肉",
+    "dish_name": "孜然牛肉",
+    "difficulty": "★★★",
+    "key_ingredients": "小米椒,孜然粒,青椒,葱,牛肉,生抽,淀粉"
+  },
+  {
+    "id": "meat_dish-小炒肉",
+    "dish_name": "小炒肉",
+    "difficulty": "★★★",
+    "key_ingredients": "五花肉,淀粉,老抽,葱,小米椒,朝天椒,蒜,豆豉,豆瓣酱"
+  },
+  {
+    "id": "meat_dish-小米辣炒肉",
+    "dish_name": "小米辣炒肉",
+    "difficulty": "★★★",
+    "key_ingredients": "小米辣,肉,姜,蒜,豆瓣酱"
+  },
+  {
+    "id": "meat_dish-小酥肉",
+    "dish_name": "小酥肉",
+    "difficulty": "★★★",
+    "key_ingredients": "猪肉,面粉,红薯粉,鸡蛋清"
+  },
+  {
+    "id": "meat_dish-尖椒炒牛肉",
+    "dish_name": "尖椒炒牛肉",
+    "difficulty": "★★★",
+    "key_ingredients": "牛肉,蒜,葱,姜,尖椒,酱油"
+  },
+  {
+    "id": "meat_dish-山西过油肉",
+    "dish_name": "山西过油肉",
+    "difficulty": "★★★★",
+    "key_ingredients": "木耳,猪里脊,鸡蛋,淀粉,蒜苔,葱头,葱,姜,蒜"
+  },
+  {
+    "id": "meat_dish-带把肘子",
+    "dish_name": "带把肘子",
+    "difficulty": "★★★★★",
+    "key_ingredients": "肘子,八角,桂皮,甜面酱,葱,红豆腐乳,红酱油,白酱油,姜,蒜"
+  },
+  {
+    "id": "meat_dish-意式烤鸡",
+    "dish_name": "意式烤鸡",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡腿肉,蒜,欧芹,柠檬"
+  },
+  {
+    "id": "meat_dish-杀猪菜",
+    "dish_name": "杀猪菜",
+    "difficulty": "★★★★",
+    "key_ingredients": "血肠,排骨,酸菜,蒜瓣,干辣椒,姜粉,香油,香叶,八角,葱结,枸杞"
+  },
+  {
+    "id": "meat_dish-椒盐排条",
+    "dish_name": "椒盐排条",
+    "difficulty": "★★★★",
+    "key_ingredients": "大排,葱姜水,面粉,淀粉,吉士粉,鸡蛋"
+  },
+  {
+    "id": "meat_dish-水煮肉片",
+    "dish_name": "水煮肉片",
+    "difficulty": "★★★★★",
+    "key_ingredients": "里脊肉,绿豆芽,凤尾,芹菜,蒜苗,大蒜,生姜,红泡椒,小米辣干辣椒,青花椒,豆瓣,鸡蛋清,土豆淀粉,植物油,菜籽油"
+  },
+  {
+    "id": "meat_dish-洋葱炒猪肉",
+    "dish_name": "洋葱炒猪肉",
+    "difficulty": "★★★",
+    "key_ingredients": "洋葱,猪肉,蒜头"
+  },
+  {
+    "id": "meat_dish-澳门湿版免治牛肉饭",
+    "dish_name": "澳门湿版免治牛肉饭",
+    "difficulty": "★★",
+    "key_ingredients": "牛肉末,洋葱,米饭,鸡蛋"
+  },
+  {
+    "id": "meat_dish-烤鸡翅",
+    "dish_name": "烤鸡翅",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡翅"
+  },
+  {
+    "id": "meat_dish-猪肉烩酸菜",
+    "dish_name": "猪肉烩酸菜",
+    "difficulty": "★★★★★",
+    "key_ingredients": "大葱,生姜,大蒜,酸菜,排骨,五花肉,五香粉,生抽酱油,大料"
+  },
+  {
+    "id": "meat_dish-甜辣烤全翅",
+    "dish_name": "甜辣烤全翅",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡全翅"
+  },
+  {
+    "id": "meat_dish-番茄红酱",
+    "dish_name": "番茄红酱",
+    "difficulty": "★★★★",
+    "key_ingredients": "胡萝卜,芹菜,洋葱,蒜,橄榄油,牛肉,番茄酱,牛奶"
+  },
+  {
+    "id": "meat_dish-白菜猪肉炖粉条",
+    "dish_name": "白菜猪肉炖粉条",
+    "difficulty": "★★★",
+    "key_ingredients": "五花肉,大白菜,粉条"
+  },
+  {
+    "id": "meat_dish-粉蒸肉",
+    "dish_name": "粉蒸肉",
+    "difficulty": "★★★★",
+    "key_ingredients": "五花肉,姜,蒜,生抽,老抽,料酒,郫县豆瓣酱,白砂糖,蒸肉米粉,土豆"
+  },
+  {
+    "id": "meat_dish-糖醋里脊",
+    "dish_name": "糖醋里脊",
+    "difficulty": "★★★★",
+    "key_ingredients": "猪里脊肉,料酒,生抽,蚝油,鸡蛋,淀粉,番茄酱,醋"
+  },
+  {
+    "id": "meat_dish-红烧鸡翅",
+    "dish_name": "红烧鸡翅",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡翅,姜,葱,大蒜,香叶,八角,干辣椒,冰糖,料酒,生抽,老抽,白芝麻,小葱花"
+  },
+  {
+    "id": "meat_dish-肉饼炖蛋",
+    "dish_name": "肉饼炖蛋",
+    "difficulty": "★★★",
+    "key_ingredients": "猪肉末,鸡蛋"
+  },
+  {
+    "id": "meat_dish-腐乳肉",
+    "dish_name": "腐乳肉",
+    "difficulty": "★★★★★",
+    "key_ingredients": "五花肉,料酒,姜片,玫瑰腐乳,腐乳汁,冰糖,老抽,葱"
+  },
+  {
+    "id": "meat_dish-萝卜炖羊排",
+    "dish_name": "萝卜炖羊排",
+    "difficulty": "★★★★",
+    "key_ingredients": "萝卜,羊排,葱,姜,料酒,花椒,冰糖,白芷"
+  },
+  {
+    "id": "meat_dish-蒜苔炒肉末",
+    "dish_name": "蒜苔炒肉末",
+    "difficulty": "★★",
+    "key_ingredients": "蒜苔,五花肉,蒜瓣"
+  },
+  {
+    "id": "meat_dish-虎皮肘子",
+    "dish_name": "虎皮肘子",
+    "difficulty": "★★★★★",
+    "key_ingredients": "猪肘,葱,蒜,姜,料酒,香叶,肉桂皮,豆蔻,花椒,大料,老抽,生抽,白醋,冰糖,淀粉"
+  },
+  {
+    "id": "meat_dish-蚂蚁上树",
+    "dish_name": "蚂蚁上树",
+    "difficulty": "★★★",
+    "key_ingredients": "红薯粉丝,蒜,姜,猪肉末,郫县豆瓣酱,生抽,老抽,小葱"
+  },
+  {
+    "id": "meat_dish-豉汁排骨",
+    "dish_name": "豉汁排骨",
+    "difficulty": "★★★★",
+    "key_ingredients": "排骨,豆豉,葱花,白芝麻"
+  },
+  {
+    "id": "meat_dish-辣椒炒肉",
+    "dish_name": "辣椒炒肉",
+    "difficulty": "★★★",
+    "key_ingredients": "青椒,大蒜,生姜,猪瘦肉,豆豉"
+  },
+  {
+    "id": "meat_dish-香干肉丝",
+    "dish_name": "香干肉丝",
+    "difficulty": "★★★",
+    "key_ingredients": "肉丝,青椒,大蒜,香干,淀粉"
+  },
+  {
+    "id": "meat_dish-鱼香肉丝",
+    "dish_name": "鱼香肉丝",
+    "difficulty": "★★★★",
+    "key_ingredients": "里脊肉,木耳,青椒,胡萝卜,姜,蒜,葱,豆瓣酱,生抽,料酒,淀粉,蛋清,醋"
+  },
+  {
+    "id": "meat_dish-麻辣香锅",
+    "dish_name": "麻辣香锅",
+    "difficulty": "★★★",
+    "key_ingredients": "青菜,无骨肉,北京麻辣方便面,麻辣香锅调料,干辣椒"
+  },
+  {
+    "id": "meat_dish-黄油鸡",
+    "dish_name": "黄油鸡",
+    "difficulty": "★★★★",
+    "key_ingredients": "鸡肉,酸奶,生姜,大蒜,红辣椒粉,姜黄粉,柠檬汁,番茄,洋葱,腰果,黄油,淡奶油,印度综合香料粉,小豆蔻粉,干葫芦巴叶"
+  },
+  {
+    "id": "meat_dish-黄焖鸡",
+    "dish_name": "黄焖鸡",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡腿,香菇,青椒,土豆,生姜,干辣椒,料酒,酱油"
+  },
+  {
+    "id": "meat_dish-黄瓜炒肉",
+    "dish_name": "黄瓜炒肉",
+    "difficulty": "★★★",
+    "key_ingredients": "猪瘦肉,黄瓜,蒜,小米辣"
+  },
+  {
+    "id": "meat_dish-农家一碗香",
+    "dish_name": "农家一碗香",
+    "difficulty": "★★★",
+    "key_ingredients": "猪肉,青椒,小米辣,蒜,姜,鸡蛋,豆瓣酱"
+  },
+  {
+    "id": "meat_dish-冬瓜酿肉",
+    "dish_name": "冬瓜酿肉",
+    "difficulty": "★★★★",
+    "key_ingredients": "冬瓜,肉末,葱,姜,淀粉,鸡蛋,水淀粉"
+  },
+  {
+    "id": "meat_dish-凉拌鸡丝",
+    "dish_name": "凉拌鸡丝",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡胸肉,姜,料酒,麻油,生抽,香醋"
+  },
+  {
+    "id": "meat_dish-卤菜",
+    "dish_name": "卤菜",
+    "difficulty": "★★★",
+    "key_ingredients": "牛腱子,洋葱,生姜,大蒜,干辣椒,黄豆酱,豆瓣酱,蚝油,南腐乳,生抽,老抽,啤酒"
+  },
+  {
+    "id": "meat_dish-口水鸡",
+    "dish_name": "口水鸡",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡肉,姜,小葱,花椒,花生,葱,蒜,辣椒粉,生抽,醋,味精,香油,香菜"
+  },
+  {
+    "id": "meat_dish-台式卤肉饭",
+    "dish_name": "台式卤肉饭",
+    "difficulty": "★★★★★",
+    "key_ingredients": "五花肉,红葱头,大蒜,鸡蛋,冰糖,米酒,生抽,五香粉,八角,香叶"
+  },
+  {
+    "id": "meat_dish-咖喱肥牛",
+    "dish_name": "咖喱肥牛",
+    "difficulty": "★★★★",
+    "key_ingredients": "洋葱,胡萝卜,土豆,肥牛卷,香叶,咖喱块,牛奶"
+  },
+  {
+    "id": "meat_dish-啤酒鸭",
+    "dish_name": "啤酒鸭",
+    "difficulty": "★★★★",
+    "key_ingredients": "鸭子,姜,料酒,食用油,豆瓣酱,丁香,八角,香叶,干辣椒,生抽,老抽,蒜,啤酒,鸡精"
+  },
+  {
+    "id": "meat_dish-回锅肉",
+    "dish_name": "回锅肉",
+    "difficulty": "★★★★",
+    "key_ingredients": "五花肉,青红椒,蒜苗,生姜,豆瓣酱"
+  },
+  {
+    "id": "meat_dish-土豆炖排骨",
+    "dish_name": "土豆炖排骨",
+    "difficulty": "★★★",
+    "key_ingredients": "排骨,土豆,葱,姜,生抽,老抽,蚝油,黄豆酱,干辣椒,八角,花椒,桂皮,料酒"
+  },
+  {
+    "id": "meat_dish-奶酪培根通心粉",
+    "dish_name": "奶酪培根通心粉",
+    "difficulty": "★★★",
+    "key_ingredients": "奶酪,洋葱,通心粉,黄油,大蒜,肉类,牛奶,面粉"
+  },
+  {
+    "id": "meat_dish-姜炒鸡",
+    "dish_name": "姜炒鸡",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡,姜,辣椒,大蒜,啤酒"
+  },
+  {
+    "id": "meat_dish-姜葱捞鸡",
+    "dish_name": "姜葱捞鸡",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡腿,姜,葱"
+  },
+  {
+    "id": "meat_dish-宫保鸡丁",
+    "dish_name": "宫保鸡丁",
+    "difficulty": "★★★★",
+    "key_ingredients": "手枪腿或鸡胸脯肉,大葱,姜,花生,干辣椒,花椒,莴笋,二荆条,豆瓣酱"
+  },
+  {
+    "id": "meat_dish-小炒鸡肝",
+    "dish_name": "小炒鸡肝",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡肝,蒜苗,大葱,姜"
+  },
+  {
+    "id": "meat_dish-小炒黄牛肉",
+    "dish_name": "小炒黄牛肉",
+    "difficulty": "★★★★",
+    "key_ingredients": "牛里脊,芹菜,小米椒,野山椒,香菜"
+  },
+  {
+    "id": "meat_dish-尖叫牛蛙",
+    "dish_name": "尖叫牛蛙",
+    "difficulty": "★★★★",
+    "key_ingredients": "牛蛙肉,啤酒,生粉,料酒,泡姜,泡椒,野山椒,青红辣椒,大蒜,食用油,猪油,豆瓣酱,藤椒油,葱花"
+  },
+  {
+    "id": "meat_dish-巴基斯坦牛肉咖喱",
+    "dish_name": "巴基斯坦牛肉咖喱",
+    "difficulty": "★★★★★",
+    "key_ingredients": "螺丝椒,番茄,牛肉,酸奶"
+  },
+  {
+    "id": "meat_dish-干煸仔鸡",
+    "dish_name": "干煸仔鸡",
+    "difficulty": "★★★★",
+    "key_ingredients": "鸡腿肉,土豆,青椒,蒜瓣,红油豆瓣酱,花椒碎"
+  },
+  {
+    "id": "meat_dish-广式萝卜牛腩",
+    "dish_name": "广式萝卜牛腩",
+    "difficulty": "★★★★",
+    "key_ingredients": "牛腩,白萝卜,姜,葱,南乳,柱侯酱,酱油,蚝油,桂皮,八角,香叶,干辣椒"
+  },
+  {
+    "id": "meat_dish-徽派红烧肉",
+    "dish_name": "徽派红烧肉",
+    "difficulty": "★★★★",
+    "key_ingredients": "五花肉,白砂糖,姜,蒜,料酒,五香粉,葱,生抽,老抽,蚝油"
+  },
+  {
+    "id": "meat_dish-新疆大盘鸡",
+    "dish_name": "新疆大盘鸡",
+    "difficulty": "★★★★",
+    "key_ingredients": "鸡肉,土豆,葱,蒜,辣椒,菜椒,线椒,甜椒,花椒,香叶,香果,干线椒,生抽,蚝油,料酒"
+  },
+  {
+    "id": "meat_dish-无骨鸡爪",
+    "dish_name": "无骨鸡爪",
+    "difficulty": "★★★★★",
+    "key_ingredients": "鸡爪,大葱,料酒,姜,小米辣,大蒜,洋葱,香菜,柠檬"
+  },
+  {
+    "id": "meat_dish-枝竹羊腩煲",
+    "dish_name": "枝竹羊腩煲",
+    "difficulty": "★★★★★",
+    "key_ingredients": "香菇,腐竹,南乳,柱侯酱,腐乳,洋葱,小葱,羊腩,姜,蒜,冰糖,香叶,八角,桂皮"
+  },
+  {
+    "id": "meat_dish-柱候牛腩",
+    "dish_name": "柱候牛腩",
+    "difficulty": "★★★★",
+    "key_ingredients": "姜,蒜,小米辣,香叶,花椒,八角,干辣椒,丁香,甘草,南乳,豆瓣酱,冰糖,花雕酒,白酒,柱候酱,蚝油,叉烧酱,老抽,生抽,牛肉,牛腩,萝卜,土豆"
+  },
+  {
+    "id": "meat_dish-梅菜扣肉",
+    "dish_name": "梅菜扣肉",
+    "difficulty": "★★★★",
+    "key_ingredients": "梅菜,五花肉,老抽,五香粉,小米椒,蒜蓉"
+  },
+  {
+    "id": "meat_dish-水煮牛肉",
+    "dish_name": "水煮牛肉",
+    "difficulty": "★★★",
+    "key_ingredients": "牛肉,姜,鸡蛋,淀粉,蚝油,料酒,香菜,豆瓣酱,蒜,豆芽,辣椒粉,辣椒圈"
+  },
+  {
+    "id": "meat_dish-清蒸鳜鱼",
+    "dish_name": "清蒸鳜鱼",
+    "difficulty": "★★★",
+    "key_ingredients": "鳜鱼,姜,猪油,大葱,小葱,红椒,生抽,蒸鱼豉油"
+  },
+  {
+    "id": "meat_dish-湖南家常红烧肉",
+    "dish_name": "湖南家常红烧肉",
+    "difficulty": "★★★",
+    "key_ingredients": "五花肉,姜,八角,桂皮,生抽,老抽,料酒,干小米椒,冰糖"
+  },
+  {
+    "id": "meat_dish-湘祁米夫鸭",
+    "dish_name": "湘祁米夫鸭",
+    "difficulty": "★★★★",
+    "key_ingredients": "糯米粉,粘米粉,蒸肉粉,细辣椒粉,鸭子,姜,蒜子,五花肉,葱花"
+  },
+  {
+    "id": "meat_dish-煎烤羊排",
+    "dish_name": "煎烤羊排",
+    "difficulty": "★★★★",
+    "key_ingredients": "羊排,桂皮,花椒,八角,白芷,香叶,料酒,辣椒粉,孜然粒,烧烤撒料,孜然粉,白芝麻"
+  },
+  {
+    "id": "meat_dish-牛排",
+    "dish_name": "牛排",
+    "difficulty": "★★★★",
+    "key_ingredients": "牛排,小番茄,小土豆,口蘑,大蒜,黄油,百里香"
+  },
+  {
+    "id": "meat_dish-猪皮冻",
+    "dish_name": "猪皮冻",
+    "difficulty": "★★★★★",
+    "key_ingredients": "猪皮,姜,料酒,白醋,葱,八角,花椒,味精,鸡精,生抽,老抽"
+  },
+  {
+    "id": "meat_dish-瘦肉土豆片",
+    "dish_name": "瘦肉土豆片",
+    "difficulty": "★★★",
+    "key_ingredients": "土豆,蒜苗,瘦肉"
+  },
+  {
+    "id": "meat_dish-糖醋排骨",
+    "dish_name": "糖醋排骨",
+    "difficulty": "★★★★",
+    "key_ingredients": "排骨,姜片,食用油,白砂糖,香醋,生抽,蚝油,鸡精,番茄酱,五香粉,老抽,芝麻"
+  },
+  {
+    "id": "meat_dish-红烧猪蹄",
+    "dish_name": "红烧猪蹄",
+    "difficulty": "★★★★",
+    "key_ingredients": "猪蹄,冰糖,香叶,桂皮,八角,生抽,老抽,料酒,姜"
+  },
+  {
+    "id": "meat_dish-南派红烧肉",
+    "dish_name": "南派红烧肉",
+    "difficulty": "★★★★",
+    "key_ingredients": "猪五花肉,生姜,小葱,蒜,花椒,八角,香叶"
+  },
+  {
+    "id": "meat_dish-简易红烧肉",
+    "dish_name": "简易红烧肉",
+    "difficulty": "★★★",
+    "key_ingredients": "猪五花肉,豆皮,生姜,鹌鹑蛋,大葱,冰糖,生抽,老抽,料酒,香叶,八角"
+  },
+  {
+    "id": "meat_dish-羊排焖面",
+    "dish_name": "羊排焖面",
+    "difficulty": "★★★★",
+    "key_ingredients": "羊肉,生姜,干辣椒,花椒,白砂糖,老抽,青椒,甜椒,大葱,面皮"
+  },
+  {
+    "id": "meat_dish-老妈蹄花",
+    "dish_name": "老妈蹄花",
+    "difficulty": "★★★★",
+    "key_ingredients": "白芸豆,猪前蹄,大葱,姜,料酒,当归,白芷,白胡椒粉,鸡精,葱花,葱,蒜,小米椒,生抽,香醋,油泼辣子,花椒油"
+  },
+  {
+    "id": "meat_dish-老式锅包肉",
+    "dish_name": "老式锅包肉",
+    "difficulty": "★★★★",
+    "key_ingredients": "猪通脊肉,土豆淀粉,中筋面粉,大葱,姜,胡萝卜,香菜,蒜,白熟芝麻"
+  },
+  {
+    "id": "meat_dish-芥末罗氏虾",
+    "dish_name": "芥末罗氏虾",
+    "difficulty": "★★★",
+    "key_ingredients": "虾,大蒜,生抽,蚝油,芥末,生粉,小米辣,黄油"
+  },
+  {
+    "id": "meat_dish-茭白炒肉",
+    "dish_name": "茭白炒肉",
+    "difficulty": "★★★",
+    "key_ingredients": "茭白,瘦肉,姜,蒜"
+  },
+  {
+    "id": "meat_dish-荔枝肉",
+    "dish_name": "荔枝肉",
+    "difficulty": "★★★★",
+    "key_ingredients": "瘦肉,鸡蛋,生粉,番茄酱,姜末,凤梨,芝麻"
+  },
+  {
+    "id": "meat_dish-荷兰豆炒腊肠",
+    "dish_name": "荷兰豆炒腊肠",
+    "difficulty": "★★",
+    "key_ingredients": "荷兰豆,腊肠,生抽"
+  },
+  {
+    "id": "meat_dish-血浆鸭",
+    "dish_name": "血浆鸭",
+    "difficulty": "★★★★★",
+    "key_ingredients": "鸭肉,鸭血,辣椒,姜,蒜,香葱"
+  },
+  {
+    "id": "meat_dish-西红柿土豆炖牛肉",
+    "dish_name": "西红柿土豆炖牛肉",
+    "difficulty": "★★★★",
+    "key_ingredients": "土豆,西红柿,牛肉,洋葱"
+  },
+  {
+    "id": "meat_dish-西红柿牛腩",
+    "dish_name": "西红柿牛腩",
+    "difficulty": "★★★★★",
+    "key_ingredients": "牛腩,葱,姜,八角,西红柿"
+  },
+  {
+    "id": "meat_dish-豆豉鲮鱼油麦菜",
+    "dish_name": "豆豉鲮鱼油麦菜",
+    "difficulty": "★★",
+    "key_ingredients": "油麦菜,鲮鱼罐头,大蒜,豆豉"
+  },
+  {
+    "id": "meat_dish-豉汁蒸白鱔",
+    "dish_name": "豉汁蒸白鱔",
+    "difficulty": "★★★",
+    "key_ingredients": "白鱔,豆豉,蒜,生抽,老抽,麻油,姜,葱,红椒"
+  },
+  {
+    "id": "meat_dish-贵州辣子鸡",
+    "dish_name": "贵州辣子鸡",
+    "difficulty": "★★★★",
+    "key_ingredients": "土豆,鸡块,生姜片,花椒,糍粑辣椒,豆瓣酱,啤酒,香叶,大蒜,酒糟,蒜苗"
+  },
+  {
+    "id": "meat_dish-酱排骨",
+    "dish_name": "酱排骨",
+    "difficulty": "★★★★",
+    "key_ingredients": "排骨,姜,料酒,生抽,蚝油,五香粉,蒜,小米椒,老抽"
+  },
+  {
+    "id": "meat_dish-酱牛肉",
+    "dish_name": "酱牛肉",
+    "difficulty": "★★★★★",
+    "key_ingredients": "牛腱子肉,料酒,花椒,姜片"
+  },
+  {
+    "id": "meat_dish-醉排骨",
+    "dish_name": "醉排骨",
+    "difficulty": "★★★★",
+    "key_ingredients": "排骨,地瓜粉,鱼露,鸡蛋黄,蒜末,香醋,白砂糖,番茄酱,葱花,芝麻"
+  },
+  {
+    "id": "meat_dish-青椒土豆炒肉",
+    "dish_name": "青椒土豆炒肉",
+    "difficulty": "★★★",
+    "key_ingredients": "青椒,土豆,猪肉,葱,姜,蒜,土豆淀粉"
+  },
+  {
+    "id": "meat_dish-香干芹菜炒肉",
+    "dish_name": "香干芹菜炒肉",
+    "difficulty": "★★★",
+    "key_ingredients": "芹菜,香干,蒜头,辣椒,花椒,猪肉,老抽,豆瓣酱,鸡精,蚝油"
+  },
+  {
+    "id": "meat_dish-香煎五花肉",
+    "dish_name": "香煎五花肉",
+    "difficulty": "★★★",
+    "key_ingredients": "五花肉,生菜叶,豆瓣酱"
+  },
+  {
+    "id": "meat_dish-香菇滑鸡",
+    "dish_name": "香菇滑鸡",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡腿,干香菇,葱,姜,蒜"
+  },
+  {
+    "id": "meat_dish-香辣鸡爪煲",
+    "dish_name": "香辣鸡爪煲",
+    "difficulty": "★★★★",
+    "key_ingredients": "鸡爪,葱,姜,料酒,香叶,八角,生抽,老抽,蒜,小米椒,辣椒面,蚝油,五香粉,鸡精"
+  },
+  {
+    "id": "meat_dish-鱼香茄子",
+    "dish_name": "鱼香茄子",
+    "difficulty": "★★★",
+    "key_ingredients": "茄子,肉,葱,姜,蒜,小米椒,生抽,老抽,醋,水淀粉,豆瓣酱"
+  },
+  {
+    "id": "meat_dish-麻婆豆腐",
+    "dish_name": "麻婆豆腐",
+    "difficulty": "★★★",
+    "key_ingredients": "大蒜,生姜,小米辣,五花肉,鸭蛋,豆腐,花椒,蒜蓉辣酱"
+  },
+  {
+    "id": "meat_dish-黑椒牛柳",
+    "dish_name": "黑椒牛柳",
+    "difficulty": "★★★★",
+    "key_ingredients": "牛肉,洋葱,菜椒"
+  },
+  {
+    "id": "meat_dish-黔式腊肠娃娃菜",
+    "dish_name": "黔式腊肠娃娃菜",
+    "difficulty": "★",
+    "key_ingredients": "腊肠,娃娃菜"
+  },
+  {
+    "id": "semi-finished-凉皮",
+    "dish_name": "凉皮",
+    "difficulty": "★★★",
+    "key_ingredients": "凉皮,绿豆芽,黄瓜,蒜,面筋,芝麻酱"
+  },
+  {
+    "id": "semi-finished-半成品意面",
+    "dish_name": "半成品意面",
+    "difficulty": "★",
+    "key_ingredients": "面条,酱料"
+  },
+  {
+    "id": "semi-finished-牛油火锅底料",
+    "dish_name": "牛油火锅底料",
+    "difficulty": "★★★★★",
+    "key_ingredients": "老姜,大葱,洋葱,大蒜,色拉油,菜籽油,纯猪油,糍粑辣椒,豆瓣,豆鼓,豆母子,红花椒,小茴香,麦芽粉,白酒,干辣椒面"
+  },
+  {
+    "id": "semi-finished-速冻水饺",
+    "dish_name": "速冻水饺",
+    "difficulty": "★",
+    "key_ingredients": "饺子"
+  },
+  {
+    "id": "semi-finished-速冻馄饨",
+    "dish_name": "速冻馄饨",
+    "difficulty": "★★",
+    "key_ingredients": "馄饨,水,香菜"
+  },
+  {
+    "id": "semi-finished-懒人蛋挞",
+    "dish_name": "懒人蛋挞",
+    "difficulty": "★★★",
+    "key_ingredients": "蛋挞皮,蛋挞液"
+  },
+  {
+    "id": "semi-finished-炸薯条",
+    "dish_name": "炸薯条",
+    "difficulty": "★★",
+    "key_ingredients": "开封薯条"
+  },
+  {
+    "id": "semi-finished-空气炸锅羊排",
+    "dish_name": "空气炸锅羊排",
+    "difficulty": "★★★",
+    "key_ingredients": "羊排,黑椒混合调味料,蒜蓉酱,罗勒碎,黄油,烧烤料"
+  },
+  {
+    "id": "semi-finished-空气炸锅鸡翅中",
+    "dish_name": "空气炸锅鸡翅中",
+    "difficulty": "★★",
+    "key_ingredients": "鸡翅,罗勒碎"
+  },
+  {
+    "id": "semi-finished-速冻汤圆",
+    "dish_name": "速冻汤圆",
+    "difficulty": "★",
+    "key_ingredients": "汤圆"
+  },
+  {
+    "id": "soup-奶油蘑菇汤",
+    "dish_name": "奶油蘑菇汤",
+    "difficulty": "★",
+    "key_ingredients": "白蘑菇,洋葱,黄油,面粉,牛奶,淡奶油"
+  },
+  {
+    "id": "soup-小米粥",
+    "dish_name": "小米粥",
+    "difficulty": "★★",
+    "key_ingredients": "小米"
+  },
+  {
+    "id": "soup-生汆丸子汤",
+    "dish_name": "生汆丸子汤",
+    "difficulty": "★★★★",
+    "key_ingredients": "肉,葱,姜,花椒,鸡蛋清,土豆淀粉,熟豆油,粉丝,木耳,黄花,小香葱,香菜"
+  },
+  {
+    "id": "soup-番茄牛肉蛋花汤",
+    "dish_name": "番茄牛肉蛋花汤",
+    "difficulty": "★★★",
+    "key_ingredients": "牛肉,番茄,葱,姜,蒜,鸡蛋"
+  },
+  {
+    "id": "soup-皮蛋瘦肉粥",
+    "dish_name": "皮蛋瘦肉粥",
+    "difficulty": "★★★",
+    "key_ingredients": "大米,瘦肉,皮蛋,生姜,小葱,香菜,生菜"
+  },
+  {
+    "id": "soup-米粥",
+    "dish_name": "米粥",
+    "difficulty": "★★",
+    "key_ingredients": "米,油,水"
+  },
+  {
+    "id": "soup-紫菜蛋花汤",
+    "dish_name": "紫菜蛋花汤",
+    "difficulty": "★★",
+    "key_ingredients": "紫菜,蛋液,葱花,香油,虾皮"
+  },
+  {
+    "id": "soup-罗宋汤",
+    "dish_name": "罗宋汤",
+    "difficulty": "★★★★",
+    "key_ingredients": "洋葱,胡萝卜,欧芹,红肠,马铃薯,包菜,牛肉,番茄膏,番茄罐头"
+  },
+  {
+    "id": "soup-腊八粥",
+    "dish_name": "腊八粥",
+    "difficulty": "★★★★",
+    "key_ingredients": "绿豆,红豆,花生,黄豆,豌豆,红腰豆,大米,糯米,薏米,黑米,小米,莲子,红枣,桂圆,栗子,核桃,葡萄干"
+  },
+  {
+    "id": "soup-西红柿鸡蛋汤",
+    "dish_name": "西红柿鸡蛋汤",
+    "difficulty": "★★",
+    "key_ingredients": "西红柿,葱,姜,蒜,鸡蛋"
+  },
+  {
+    "id": "soup-金针菇汤",
+    "dish_name": "金针菇汤",
+    "difficulty": "★★",
+    "key_ingredients": "金针菇"
+  },
+  {
+    "id": "soup-陈皮排骨汤",
+    "dish_name": "陈皮排骨汤",
+    "difficulty": "★★★★",
+    "key_ingredients": "排骨,陈皮,麦冬,玉竹,石斛,西洋参"
+  },
+  {
+    "id": "soup-黄瓜皮蛋汤",
+    "dish_name": "黄瓜皮蛋汤",
+    "difficulty": "★★",
+    "key_ingredients": "黄瓜,葱,蒜,皮蛋"
+  },
+  {
+    "id": "soup-勾芡香菇汤",
+    "dish_name": "勾芡香菇汤",
+    "difficulty": "★★★",
+    "key_ingredients": "香菇,生粉,水,葱花"
+  },
+  {
+    "id": "soup-排骨苦瓜汤",
+    "dish_name": "排骨苦瓜汤",
+    "difficulty": "★★★★",
+    "key_ingredients": "排骨,苦瓜,虾皮"
+  },
+  {
+    "id": "soup-昂刺鱼豆腐汤",
+    "dish_name": "昂刺鱼豆腐汤",
+    "difficulty": "★★★",
+    "key_ingredients": "鱼,豆腐,料酒,姜片,葱花"
+  },
+  {
+    "id": "soup-朱雀汤",
+    "dish_name": "朱雀汤",
+    "difficulty": "★",
+    "key_ingredients": "鸡蛋,香油,白糖"
+  },
+  {
+    "id": "soup-玉米排骨汤",
+    "dish_name": "玉米排骨汤",
+    "difficulty": "★★★",
+    "key_ingredients": "大葱,玉米,胡萝卜,生姜,排骨"
+  },
+  {
+    "id": "soup-羊肉汤",
+    "dish_name": "羊肉汤",
+    "difficulty": "★★★",
+    "key_ingredients": "羊肉,大葱,香菜"
+  },
+  {
+    "id": "soup-菌菇炖乳鸽",
+    "dish_name": "菌菇炖乳鸽",
+    "difficulty": "★★★★",
+    "key_ingredients": "乳鸽,玉米,菌菇"
+  },
+  {
+    "id": "soup-银耳莲子粥",
+    "dish_name": "银耳莲子粥",
+    "difficulty": "★★★★",
+    "key_ingredients": "银耳,莲子,红枣,枸杞,冰糖"
+  },
+  {
+    "id": "soup-陈皮排骨汤",
+    "dish_name": "陈皮排骨汤",
+    "difficulty": "★★★",
+    "key_ingredients": "排骨,陈皮,麦冬,玉竹,石斛,西洋参"
+  },
+  {
+    "id": "staple-利提巧卡",
+    "dish_name": "利提巧卡",
+    "difficulty": "★★★★★",
+    "key_ingredients": "鹰嘴豆粉,洋葱,青辣椒,生姜,孜然籽,芝麻,红辣椒粉,印度黑盐,香菜叶,全麦面粉,酥油,茄子,番茄,土豆,大蒜"
+  },
+  {
+    "id": "staple-印度烤饼",
+    "dish_name": "印度烤饼",
+    "difficulty": "★★★",
+    "key_ingredients": "中筋面粉,干酵母,糖,酸奶,食用油,大蒜,香菜叶,芝麻,酥油或黄油"
+  },
+  {
+    "id": "staple-印度焖饭",
+    "dish_name": "印度焖饭",
+    "difficulty": "★★★★★",
+    "key_ingredients": "鸡肉,酸奶,生姜,大蒜,红辣椒粉,姜黄粉,印度综合香料粉,柠檬汁,藏红花,牛奶,洋葱,巴斯马蒂香米,月桂叶,小豆蔻,丁香,肉桂,八角,酥油,薄荷叶,香菜叶,青辣椒"
+  },
+  {
+    "id": "staple-可乐炒饭",
+    "dish_name": "可乐炒饭",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡蛋,可乐,生抽,老抽,豆瓣酱,蚝油,米饭,火腿肠,葱花"
+  },
+  {
+    "id": "staple-咸肉菜饭",
+    "dish_name": "咸肉菜饭",
+    "difficulty": "★★★★",
+    "key_ingredients": "冬笋,咸肉,青菜,米"
+  },
+  {
+    "id": "staple-手工水饺",
+    "dish_name": "手工水饺",
+    "difficulty": "★★★★★",
+    "key_ingredients": "面粉,猪肉,韭菜,葱,姜,鸡蛋"
+  },
+  {
+    "id": "staple-汤面",
+    "dish_name": "汤面",
+    "difficulty": "★★",
+    "key_ingredients": "菜类材料,生肉,香菇,面食,青菜"
+  },
+  {
+    "id": "staple-炒年糕",
+    "dish_name": "炒年糕",
+    "difficulty": "★★★",
+    "key_ingredients": "年糕,小葱,青菜,鸡蛋"
+  },
+  {
+    "id": "staple-炒方便面",
+    "dish_name": "炒方便面",
+    "difficulty": "★★",
+    "key_ingredients": "火腿肠,方便面面饼,鸡蛋"
+  },
+  {
+    "id": "staple-炒河粉",
+    "dish_name": "炒河粉",
+    "difficulty": "★★★★",
+    "key_ingredients": "小葱,蒜,鸡蛋,绿豆芽,黄瓜,面筋,肉,淀粉,河粉,老抽,生抽"
+  },
+  {
+    "id": "staple-炒馍",
+    "dish_name": "炒馍",
+    "difficulty": "★★★",
+    "key_ingredients": "馒头,鸡蛋,葱花"
+  },
+  {
+    "id": "staple-炸酱面",
+    "dish_name": "炸酱面",
+    "difficulty": "★★★",
+    "key_ingredients": "面条,肉,葱,豆瓣酱,甜面酱,菜码"
+  },
+  {
+    "id": "staple-热干面",
+    "dish_name": "热干面",
+    "difficulty": "★★★",
+    "key_ingredients": "碱水面,芝麻酱,酱油,肉汤汁,蒜水,萝卜干,肉末,酸豆角,葱花"
+  },
+  {
+    "id": "staple-照烧鸡腿饭",
+    "dish_name": "照烧鸡腿饭",
+    "difficulty": "★★★★",
+    "key_ingredients": "鸡腿,黑胡椒,姜,料酒,生抽,蜂蜜,老抽,大蒜,蔬菜"
+  },
+  {
+    "id": "staple-煮泡面加蛋",
+    "dish_name": "煮泡面加蛋",
+    "difficulty": "★",
+    "key_ingredients": "面饼,鸡蛋"
+  },
+  {
+    "id": "staple-猪油拌饭",
+    "dish_name": "猪油拌饭",
+    "difficulty": "★",
+    "key_ingredients": "米饭,酱油,蚝油,葱花,猪油渣"
+  },
+  {
+    "id": "staple-红芸豆拌饭",
+    "dish_name": "红芸豆拌饭",
+    "difficulty": "★★★",
+    "key_ingredients": "红芸豆,洋葱,番茄,生姜,大蒜,青辣椒,香菜叶,月桂叶,大米"
+  },
+  {
+    "id": "staple-老干妈拌面",
+    "dish_name": "老干妈拌面",
+    "difficulty": "★",
+    "key_ingredients": "面,老干妈,酱油"
+  },
+  {
+    "id": "staple-肉蛋盖饭",
+    "dish_name": "肉蛋盖饭",
+    "difficulty": "★★★",
+    "key_ingredients": "米饭,肉馅,鸡蛋,老抽,生抽,醋,红葱油"
+  },
+  {
+    "id": "staple-葱油拌面",
+    "dish_name": "葱油拌面",
+    "difficulty": "★★",
+    "key_ingredients": "小葱,食用油,生抽,老抽,白糖,面条"
+  },
+  {
+    "id": "staple-蒸卤面",
+    "dish_name": "蒸卤面",
+    "difficulty": "★★★★",
+    "key_ingredients": "猪肉,芹菜,大蒜,葱,姜,干红椒,料酒,生抽,老抽,青椒,五香粉,面条"
+  },
+  {
+    "id": "staple-蛋包饭",
+    "dish_name": "蛋包饭",
+    "difficulty": "★★★",
+    "key_ingredients": "洋葱,胡萝卜,火腿肠,鸡胸肉,玉米粒,青豆,米饭,番茄酱,鸡蛋,牛奶"
+  },
+  {
+    "id": "staple-蛋炒饭",
+    "dish_name": "蛋炒饭",
+    "difficulty": "★★★",
+    "key_ingredients": "米饭,火腿肠,胡萝卜,黄瓜,熟肉,鸡蛋,香葱"
+  },
+  {
+    "id": "staple-螺蛳粉",
+    "dish_name": "螺蛳粉",
+    "difficulty": "★",
+    "key_ingredients": "米粉,汤料包,木耳,花生,螺蛳,酸笋,豆皮"
+  },
+  {
+    "id": "staple-酸辣蕨根粉",
+    "dish_name": "酸辣蕨根粉",
+    "difficulty": "★★",
+    "key_ingredients": "蕨根粉,酱油,醋,油泼辣子,葱,蒜,小米辣"
+  },
+  {
+    "id": "staple-醪糟小汤圆",
+    "dish_name": "醪糟小汤圆",
+    "difficulty": "★★",
+    "key_ingredients": "小汤圆,醪糟,枸杞"
+  },
+  {
+    "id": "staple-韭菜盒子",
+    "dish_name": "韭菜盒子",
+    "difficulty": "★★★",
+    "key_ingredients": "面粉,韭菜,鸡蛋,虾仁"
+  },
+  {
+    "id": "staple-鲜肉烧卖",
+    "dish_name": "鲜肉烧卖",
+    "difficulty": "★★★★",
+    "key_ingredients": "复配食品增稠剂,纯瘦肉糜,猪油,生姜,葱,酱油,料酒,白胡椒粉,浓汤宝,高汤,冬笋,皮冻,香菇,芝麻油,烧卖皮,虾仁"
+  },
+  {
+    "id": "staple-鹰嘴豆炸饼",
+    "dish_name": "鹰嘴豆炸饼",
+    "difficulty": "★★★★",
+    "key_ingredients": "鹰嘴豆,红茶包,洋葱,生姜,大蒜,番茄,青辣椒,中筋面粉,酸奶"
+  },
+  {
+    "id": "staple-麻油拌面",
+    "dish_name": "麻油拌面",
+    "difficulty": "★",
+    "key_ingredients": "快熟面,麻油,老抽,生抽"
+  },
+  {
+    "id": "staple-麻辣减脂荞麦面",
+    "dish_name": "麻辣减脂荞麦面",
+    "difficulty": "★★",
+    "key_ingredients": "娃娃菜,生菜,荞麦面,火锅底料,花生酱,牛奶"
+  },
+  {
+    "id": "staple-中式馅饼",
+    "dish_name": "中式馅饼",
+    "difficulty": "★★★★",
+    "key_ingredients": "肉沫,面粉,鸡蛋,蒜头,大葱,胡萝卜"
+  },
+  {
+    "id": "staple-凉粉",
+    "dish_name": "凉粉",
+    "difficulty": "★★★",
+    "key_ingredients": "豌豆淀粉,水,大蒜,小米辣,辣椒粉,花生碎,酱油,醋,鸡精,香菜"
+  },
+  {
+    "id": "staple-基础牛奶面包",
+    "dish_name": "基础牛奶面包",
+    "difficulty": "★★★★★",
+    "key_ingredients": "酵母,温水,面粉,植物油,蛋液"
+  },
+  {
+    "id": "staple-微波炉腊肠煲仔饭",
+    "dish_name": "微波炉腊肠煲仔饭",
+    "difficulty": "★★",
+    "key_ingredients": "米,腊肠,青菜,红萝卜,鸡蛋,葱花"
+  },
+  {
+    "id": "staple-意式肉酱面",
+    "dish_name": "意式肉酱面",
+    "difficulty": "★",
+    "key_ingredients": "意面,洋葱,肉沫,意大利面酱"
+  },
+  {
+    "id": "staple-扬州炒饭",
+    "dish_name": "扬州炒饭",
+    "difficulty": "★★★★",
+    "key_ingredients": "胡萝卜,午餐肉,葱,鸡蛋,青豆,玉米粒,虾,米饭"
+  },
+  {
+    "id": "staple-披萨饼皮",
+    "dish_name": "披萨饼皮",
+    "difficulty": "★★★★",
+    "key_ingredients": "面粉,酵母粉,橄榄油,芝士碎,沙拉酱"
+  },
+  {
+    "id": "staple-日式咖喱饭",
+    "dish_name": "日式咖喱饭",
+    "difficulty": "★★★★",
+    "key_ingredients": "胡萝卜,洋葱,土豆,肉,蒜,咖喱块"
+  },
+  {
+    "id": "staple-日式肥牛丼饭",
+    "dish_name": "日式肥牛丼饭",
+    "difficulty": "★★★★",
+    "key_ingredients": "洋葱,葱,白芝麻,肥牛,味淋,酱油,耗油,老抽"
+  },
+  {
+    "id": "staple-河南蒸面条",
+    "dish_name": "河南蒸面条",
+    "difficulty": "★★★★",
+    "key_ingredients": "挂面,五花肉,蒜薹,葱,姜,蒜"
+  },
+  {
+    "id": "staple-火腿饭团",
+    "dish_name": "火腿饭团",
+    "difficulty": "★★★★",
+    "key_ingredients": "米饭,玉米粒,青豆,火腿,海苔碎,沙拉酱"
+  },
+  {
+    "id": "staple-炒凉粉",
+    "dish_name": "炒凉粉",
+    "difficulty": "★★★",
+    "key_ingredients": "凉粉,蒜,豆瓣酱,生抽,老抽,辣椒面,十三香,矿泉水,葱花"
+  },
+  {
+    "id": "staple-炒意大利面",
+    "dish_name": "炒意大利面",
+    "difficulty": "★★★",
+    "key_ingredients": "面条,肥牛,番茄酱"
+  },
+  {
+    "id": "staple-烙饼",
+    "dish_name": "烙饼",
+    "difficulty": "★★★★",
+    "key_ingredients": "面粉,油酥"
+  },
+  {
+    "id": "staple-芝麻烧饼",
+    "dish_name": "芝麻烧饼",
+    "difficulty": "★★★",
+    "key_ingredients": "面粉,酵母粉,白糖,温水,食用油,十三香,白芝麻"
+  },
+  {
+    "id": "staple-电饭煲三文鱼炊饭",
+    "dish_name": "电饭煲三文鱼炊饭",
+    "difficulty": "★★",
+    "key_ingredients": "三文鱼,金菇,冬菇,米,牛油"
+  },
+  {
+    "id": "staple-空气炸锅照烧鸡饭",
+    "dish_name": "空气炸锅照烧鸡饭",
+    "difficulty": "★★★★",
+    "key_ingredients": "鸡肉,鸡蛋,丽滋饼干,米饭"
+  },
+  {
+    "id": "staple-煮锅蒸米饭",
+    "dish_name": "煮锅蒸米饭",
+    "difficulty": "★★",
+    "key_ingredients": "大米"
+  },
+  {
+    "id": "staple-电饭煲蒸米饭",
+    "dish_name": "电饭煲蒸米饭",
+    "difficulty": "★",
+    "key_ingredients": "米"
+  },
+  {
+    "id": "staple-老友猪肉粉",
+    "dish_name": "老友猪肉粉",
+    "difficulty": "★★★",
+    "key_ingredients": "猪肉,酸笋,大蒜,剁椒,豆豉,米粉"
+  },
+  {
+    "id": "staple-茄子肉煎饼",
+    "dish_name": "茄子肉煎饼",
+    "difficulty": "★★★",
+    "key_ingredients": "茄子,腊肉,米粉,面粉,鸡蛋"
+  },
+  {
+    "id": "staple-西红柿鸡蛋挂面",
+    "dish_name": "西红柿鸡蛋挂面",
+    "difficulty": "★★",
+    "key_ingredients": "小葱,西红柿,青椒,鸡蛋,挂面"
+  },
+  {
+    "id": "staple-豆角焖面",
+    "dish_name": "豆角焖面",
+    "difficulty": "★★★",
+    "key_ingredients": "豆角,葱,姜,蒜,五花肉,面条,生抽,老抽,蚝油,十三香,鸡精,味精"
+  },
+  {
+    "id": "staple-酱拌荞麦面",
+    "dish_name": "酱拌荞麦面",
+    "difficulty": "★★",
+    "key_ingredients": "荞麦面,黄瓜,萝卜,老干妈"
+  },
+  {
+    "id": "staple-陕西油泼面",
+    "dish_name": "陕西油泼面",
+    "difficulty": "★★",
+    "key_ingredients": "扯面,葱,蒜,青菜,豆芽,生抽,香醋,干辣椒面,芝麻,食用油,花椒,八角,桂皮,香叶"
+  },
+  {
+    "id": "staple-韩式拌饭",
+    "dish_name": "韩式拌饭",
+    "difficulty": "★★★",
+    "key_ingredients": "蔬菜,牛肉卷,鸡蛋,米饭,韩式辣酱,生抽,雪碧,芝麻,芝麻油"
+  },
+  {
+    "id": "staple-鲣鱼海苔玉米饭",
+    "dish_name": "鲣鱼海苔玉米饭",
+    "difficulty": "★★",
+    "key_ingredients": "米饭,玉米粒,鲣鱼,海苔"
+  },
+  {
+    "id": "vegetable_dish-凉拌油麦菜",
+    "dish_name": "凉拌油麦菜",
+    "difficulty": "★",
+    "key_ingredients": "蒜,醋,酱油,芝麻酱,香油,糖,蚝油,油麦菜"
+  },
+  {
+    "id": "vegetable_dish-凉拌豆腐",
+    "dish_name": "凉拌豆腐",
+    "difficulty": "★★",
+    "key_ingredients": "豆腐,小葱,大蒜,生抽,香油,醋,白糖,辣椒油"
+  },
+  {
+    "id": "vegetable_dish-凉拌金针菇",
+    "dish_name": "凉拌金针菇",
+    "difficulty": "★★",
+    "key_ingredients": "金针菇,小葱,大蒜"
+  },
+  {
+    "id": "vegetable_dish-凉拌黄瓜",
+    "dish_name": "凉拌黄瓜",
+    "difficulty": "★",
+    "key_ingredients": "黄瓜,蒜,醋,酱油,蚝油,香油"
+  },
+  {
+    "id": "vegetable_dish-印度土豆花菜",
+    "dish_name": "印度土豆花菜",
+    "difficulty": "★★★",
+    "key_ingredients": "土豆,花菜,洋葱,生姜,大蒜,青辣椒,番茄,孜然籽,姜黄粉,红辣椒粉,香菜粉,印度综合香料粉,香菜叶"
+  },
+  {
+    "id": "vegetable_dish-印度葫芦丸子",
+    "dish_name": "印度葫芦丸子",
+    "difficulty": "★★★★",
+    "key_ingredients": "瓠瓜,鹰嘴豆粉,红辣椒粉,香菜粉,洋葱,生姜,大蒜,番茄,姜黄粉,孜然粉,印度综合香料粉,青辣椒,香菜叶"
+  },
+  {
+    "id": "vegetable_dish-地三鲜",
+    "dish_name": "地三鲜",
+    "difficulty": "★★★",
+    "key_ingredients": "土豆,茄子,尖椒,葱,蒜,姜,生抽,淀粉,豆瓣酱"
+  },
+  {
+    "id": "vegetable_dish-家常日本豆腐",
+    "dish_name": "家常日本豆腐",
+    "difficulty": "★★★",
+    "key_ingredients": "日本豆腐,胡萝卜,尖椒,葱,蒜,生粉,青椒,火腿肠,黑木耳"
+  },
+  {
+    "id": "vegetable_dish-松仁玉米",
+    "dish_name": "松仁玉米",
+    "difficulty": "★★",
+    "key_ingredients": "玉米粒,胡萝卜丁,淀粉,松仁"
+  },
+  {
+    "id": "vegetable_dish-水油焖蔬菜",
+    "dish_name": "水油焖蔬菜",
+    "difficulty": "★★",
+    "key_ingredients": "蔬菜,蚝油"
+  },
+  {
+    "id": "vegetable_dish-油醋爆蛋",
+    "dish_name": "油醋爆蛋",
+    "difficulty": "★★",
+    "key_ingredients": "鸡蛋,香葱,蒜瓣,小米辣,香醋,生抽,蚝油"
+  },
+  {
+    "id": "vegetable_dish-清炒花菜",
+    "dish_name": "清炒花菜",
+    "difficulty": "★★",
+    "key_ingredients": "花菜,大蒜"
+  },
+  {
+    "id": "vegetable_dish-清蒸南瓜",
+    "dish_name": "清蒸南瓜",
+    "difficulty": "★",
+    "key_ingredients": "南瓜"
+  },
+  {
+    "id": "vegetable_dish-炒茄子",
+    "dish_name": "炒茄子",
+    "difficulty": "★★★",
+    "key_ingredients": "茄子,香葱,八角,肉末,虾皮,酱油"
+  },
+  {
+    "id": "vegetable_dish-炒青菜",
+    "dish_name": "炒青菜",
+    "difficulty": "★★",
+    "key_ingredients": "青菜,蒜瓣"
+  },
+  {
+    "id": "vegetable_dish-皮蛋豆腐",
+    "dish_name": "皮蛋豆腐",
+    "difficulty": "★",
+    "key_ingredients": "皮蛋,嫩豆腐,生抽,白砂糖,醋,香油,辣椒油,花生碎,葱花,香菜"
+  },
+  {
+    "id": "vegetable_dish-素炒豆角",
+    "dish_name": "素炒豆角",
+    "difficulty": "★★",
+    "key_ingredients": "葱,蒜,生抽,老抽,耗油,小米椒,豆角"
+  },
+  {
+    "id": "vegetable_dish-红烧茄子",
+    "dish_name": "红烧茄子",
+    "difficulty": "★★★★",
+    "key_ingredients": "青茄子,青辣椒,西红柿,洋葱,大葱,大蒜,面粉,淀粉,鸡蛋,油,酱油"
+  },
+  {
+    "id": "vegetable_dish-脆皮豆腐",
+    "dish_name": "脆皮豆腐",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡蛋,生抽,蚝油,老抽,白糖,玉米淀粉,清水,老豆腐,食用油"
+  },
+  {
+    "id": "vegetable_dish-茄子炖土豆",
+    "dish_name": "茄子炖土豆",
+    "difficulty": "★★★",
+    "key_ingredients": "茄子,土豆,辣椒,蒜,肉"
+  },
+  {
+    "id": "vegetable_dish-葱煎豆腐",
+    "dish_name": "葱煎豆腐",
+    "difficulty": "★★★",
+    "key_ingredients": "豆腐,葱,辣椒,鸡精"
+  },
+  {
+    "id": "vegetable_dish-蒜蓉西兰花",
+    "dish_name": "蒜蓉西兰花",
+    "difficulty": "★★",
+    "key_ingredients": "西兰花,大蒜,生抽,蚝油"
+  },
+  {
+    "id": "vegetable_dish-蒲烧茄子",
+    "dish_name": "蒲烧茄子",
+    "difficulty": "★★★",
+    "key_ingredients": "茄子,蒲烧汁,生粉"
+  },
+  {
+    "id": "vegetable_dish-蚝油生菜",
+    "dish_name": "蚝油生菜",
+    "difficulty": "★★",
+    "key_ingredients": "生菜,食用油,生抽,蚝油,白糖,蒜泥"
+  },
+  {
+    "id": "vegetable_dish-西红柿炒鸡蛋",
+    "dish_name": "西红柿炒鸡蛋",
+    "difficulty": "★★",
+    "key_ingredients": "西红柿,鸡蛋"
+  },
+  {
+    "id": "vegetable_dish-酸辣土豆丝",
+    "dish_name": "酸辣土豆丝",
+    "difficulty": "★★",
+    "key_ingredients": "土豆,葱,大蒜,干辣椒,青红椒,生抽,陈醋"
+  },
+  {
+    "id": "vegetable_dish-金针菇日本豆腐煲",
+    "dish_name": "金针菇日本豆腐煲",
+    "difficulty": "★★",
+    "key_ingredients": "豆腐,蒜,生抽,蚝油,老抽,小米椒,金针菇"
+  },
+  {
+    "id": "vegetable_dish-金钱蛋",
+    "dish_name": "金钱蛋",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡蛋,蒜,线椒,小米辣,豆瓣酱,生抽,蚝油"
+  },
+  {
+    "id": "vegetable_dish-陕北熬豆角",
+    "dish_name": "陕北熬豆角",
+    "difficulty": "★★",
+    "key_ingredients": "葱,蒜,姜,豆角,土豆,西红柿,辣椒,香菜"
+  },
+  {
+    "id": "vegetable_dish-雷椒皮蛋",
+    "dish_name": "雷椒皮蛋",
+    "difficulty": "★★",
+    "key_ingredients": "青椒,葱,蒜,皮蛋,小米辣,生抽,陈醋,白糖,香油"
+  },
+  {
+    "id": "vegetable_dish-鸡蛋火腿炒黄瓜",
+    "dish_name": "鸡蛋火腿炒黄瓜",
+    "difficulty": "★★",
+    "key_ingredients": "黄瓜,火腿,鸡蛋,红尖椒"
+  },
+  {
+    "id": "vegetable_dish-上汤娃娃菜",
+    "dish_name": "上汤娃娃菜",
+    "difficulty": "★★★",
+    "key_ingredients": "娃娃菜,葱,蒜,姜,皮蛋,火腿肠,午餐肉,金针菇"
+  },
+  {
+    "id": "vegetable_dish-凉拌木耳",
+    "dish_name": "凉拌木耳",
+    "difficulty": "★★",
+    "key_ingredients": "木耳,蒜瓣,小米辣,生抽,醋,香油,芥末"
+  },
+  {
+    "id": "vegetable_dish-凉拌莴笋",
+    "dish_name": "凉拌莴笋",
+    "difficulty": "★★",
+    "key_ingredients": "莴笋,萝卜,姜,蒜,小米椒"
+  },
+  {
+    "id": "vegetable_dish-包菜炒鸡蛋粉丝",
+    "dish_name": "包菜炒鸡蛋粉丝",
+    "difficulty": "★★★",
+    "key_ingredients": "胡萝卜,包菜,粉丝,鸡蛋,葱,蒜,干辣椒"
+  },
+  {
+    "id": "vegetable_dish-小炒藕丁",
+    "dish_name": "小炒藕丁",
+    "difficulty": "★★★",
+    "key_ingredients": "大葱,小米辣,莲藕"
+  },
+  {
+    "id": "vegetable_dish-干锅花菜",
+    "dish_name": "干锅花菜",
+    "difficulty": "★★★",
+    "key_ingredients": "花菜,五花肉,大蒜,小红辣椒,大葱"
+  },
+  {
+    "id": "vegetable_dish-手撕包菜",
+    "dish_name": "手撕包菜",
+    "difficulty": "★★★",
+    "key_ingredients": "包菜,五花肉,姜,蒜,小米辣,蒜苗,香醋,料酒,鸡精"
+  },
+  {
+    "id": "vegetable_dish-拔丝土豆",
+    "dish_name": "拔丝土豆",
+    "difficulty": "★★★",
+    "key_ingredients": "土豆,淀粉,白砂糖,芝麻"
+  },
+  {
+    "id": "vegetable_dish-椒盐玉米",
+    "dish_name": "椒盐玉米",
+    "difficulty": "★★★",
+    "key_ingredients": "玉米,淀粉,椒盐,芝麻"
+  },
+  {
+    "id": "vegetable_dish-榄菜肉末四季豆",
+    "dish_name": "榄菜肉末四季豆",
+    "difficulty": "★★★",
+    "key_ingredients": "四季豆,大蒜,小米辣,五花肉,橄榄菜"
+  },
+  {
+    "id": "vegetable_dish-洋葱炒鸡蛋",
+    "dish_name": "洋葱炒鸡蛋",
+    "difficulty": "★★",
+    "key_ingredients": "鸡蛋,洋葱,料酒,葱花"
+  },
+  {
+    "id": "vegetable_dish-炒滑蛋",
+    "dish_name": "炒滑蛋",
+    "difficulty": "★",
+    "key_ingredients": "鸡蛋,牛奶,食用油"
+  },
+  {
+    "id": "vegetable_dish-烤茄子",
+    "dish_name": "烤茄子",
+    "difficulty": "★★★",
+    "key_ingredients": "茄子,酱油,孜然,蒜蓉,小米椒"
+  },
+  {
+    "id": "vegetable_dish-白灼菜心",
+    "dish_name": "白灼菜心",
+    "difficulty": "★★",
+    "key_ingredients": "菜心,大蒜,洋葱,生抽,蚝油,姜,小米椒"
+  },
+  {
+    "id": "vegetable_dish-糖拌西红柿",
+    "dish_name": "糖拌西红柿",
+    "difficulty": "★★",
+    "key_ingredients": "西红柿,白糖"
+  },
+  {
+    "id": "vegetable_dish-红烧冬瓜",
+    "dish_name": "红烧冬瓜",
+    "difficulty": "★★★",
+    "key_ingredients": "冬瓜,姜,生抽,蚝油,老抽,鸡精,料酒,香葱,水淀粉"
+  },
+  {
+    "id": "vegetable_dish-芹菜拌茶树菇",
+    "dish_name": "芹菜拌茶树菇",
+    "difficulty": "★★",
+    "key_ingredients": "芹菜苗,茶树菇,食盐,香油,耗油,味极鲜"
+  },
+  {
+    "id": "vegetable_dish-莴笋叶煎饼",
+    "dish_name": "莴笋叶煎饼",
+    "difficulty": "★★",
+    "key_ingredients": "莴笋叶,鸡蛋,生粉"
+  },
+  {
+    "id": "vegetable_dish-菠菜炒鸡蛋",
+    "dish_name": "菠菜炒鸡蛋",
+    "difficulty": "★★",
+    "key_ingredients": "菠菜,鸡蛋"
+  },
+  {
+    "id": "vegetable_dish-蒜蓉空心菜",
+    "dish_name": "蒜蓉空心菜",
+    "difficulty": "★★",
+    "key_ingredients": "空心菜,蒜"
+  },
+  {
+    "id": "vegetable_dish-虎皮青椒",
+    "dish_name": "虎皮青椒",
+    "difficulty": "★★★",
+    "key_ingredients": "青椒,大蒜"
+  },
+  {
+    "id": "vegetable_dish-蚝油三鲜菇",
+    "dish_name": "蚝油三鲜菇",
+    "difficulty": "★★★",
+    "key_ingredients": "蟹味菇,白玉菇,香菇,西蓝花,姜,小米辣,菜椒,生抽,蚝油,鸡精,水淀粉,料酒,葱花"
+  },
+  {
+    "id": "vegetable_dish-西红柿豆腐汤羹",
+    "dish_name": "西红柿豆腐汤羹",
+    "difficulty": "★★",
+    "key_ingredients": "西红柿,鸡蛋,豆腐,姜片,水淀粉,鸡精,香葱"
+  },
+  {
+    "id": "vegetable_dish-西葫芦炒鸡蛋",
+    "dish_name": "西葫芦炒鸡蛋",
+    "difficulty": "★★",
+    "key_ingredients": "西红柿,西葫芦,鸡蛋"
+  },
+  {
+    "id": "vegetable_dish-话梅煮毛豆",
+    "dish_name": "话梅煮毛豆",
+    "difficulty": "★★",
+    "key_ingredients": "毛豆,话梅"
+  },
+  {
+    "id": "vegetable_dish-微波炉鸡蛋羹",
+    "dish_name": "微波炉鸡蛋羹",
+    "difficulty": "★★",
+    "key_ingredients": "鸡蛋,虾皮,葱,芝麻油,酱油"
+  },
+  {
+    "id": "vegetable_dish-蒸箱鸡蛋羹",
+    "dish_name": "蒸箱鸡蛋羹",
+    "difficulty": "★★★",
+    "key_ingredients": "鸡蛋,纯净水"
+  },
+  {
+    "id": "vegetable_dish-鸡蛋羹",
+    "dish_name": "鸡蛋羹",
+    "difficulty": "★★",
+    "key_ingredients": "鸡蛋,白醋,纯净水,香油,生抽"
+  },
+  {
+    "id": "vegetable_dish-鸡蛋花",
+    "dish_name": "鸡蛋花",
+    "difficulty": "★",
+    "key_ingredients": "鸡蛋"
+  }
+]

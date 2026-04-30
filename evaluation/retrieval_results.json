@@ -1,0 +1,515 @@
+{
+  "total_queries": 30,
+  "k": 3,
+  "hit_rate@k": 0.5667,
+  "mrr": 0.5278,
+  "ndcg@k": 0.5323,
+  "details": [
+    {
+      "query": "辣椒炒肉",
+      "expected_ids": [
+        "meat_dish-辣椒炒肉"
+      ],
+      "returned_ids": [
+        "meat_dish-辣椒炒肉",
+        "meat_dish-小炒肉",
+        "meat_dish-尖椒炒牛肉"
+      ],
+      "hit": true,
+      "rr": 1.0,
+      "dcg": 1.0,
+      "idcg": 1.0
+    },
+    {
+      "query": "我想吃清淡的鸡肉菜",
+      "expected_ids": [
+        "meat_dish-口水鸡",
+        "meat_dish-姜葱捞鸡",
+        "meat_dish-凉拌鸡丝"
+      ],
+      "returned_ids": [
+        "meat_dish-凉拌鸡丝",
+        "meat_dish-香菇滑鸡",
+        "meat_dish-小炒鸡肝"
+      ],
+      "hit": true,
+      "rr": 1.0,
+      "dcg": 1.0,
+      "idcg": 1.0
+    },
+    {
+      "query": "红烧鱼",
+      "expected_ids": [
+        "aquatic-红烧鱼",
+        "aquatic-红烧鱼头",
+        "aquatic-红烧鲤鱼"
+      ],
+      "returned_ids": [
+        "aquatic-红烧鱼",
+        "aquatic-红烧鱼头",
+        "aquatic-红烧鲤鱼"
+      ],
+      "hit": true,
+      "rr": 1.0,
+      "dcg": 2.1309,
+      "idcg": 2.1309
+    },
+    {
+      "query": "麻辣海鲜",
+      "expected_ids": [
+        "aquatic-水煮鱼",
+        "aquatic-小龙虾",
+        "aquatic-烤鱼"
+      ],
+      "returned_ids": [
+        "meat_dish-麻辣香锅",
+        "aquatic-小龙虾",
+        "meat_dish-芥末罗氏虾"
+      ],
+      "hit": true,
+      "rr": 0.5,
+      "dcg": 0.6309,
+      "idcg": 1.0
+    },
+    {
+      "query": "简单的早餐",
+      "expected_ids": [
+        "breakfast-吐司果酱",
+        "breakfast-太阳蛋",
+        "breakfast-微波炉荷包蛋"
+      ],
+      "returned_ids": [
+        "breakfast-牛奶燕麦",
+        "breakfast-燕麦鸡蛋饼",
+        "breakfast-鸡蛋三明治"
+      ],
+      "hit": false,
+      "rr": 0.0,
+      "dcg": 0.0,
+      "idcg": 0.0
+    },
+    {
+      "query": "下饭的猪肉菜",
+      "expected_ids": [
+        "meat_dish-回锅肉",
+        "meat_dish-湖南家常红烧肉",
+        "meat_dish-简易红烧肉"
+      ],
+      "returned_ids": [
+        "staple-咸肉菜饭",
+        "meat_dish-小炒肉",
+        "meat_dish-白菜猪肉炖粉条"
+      ],
+      "hit": false,
+      "rr": 0.0,
+      "dcg": 0.0,
+      "idcg": 0.0
+    },
+    {
+      "query": "素菜",
+      "expected_ids": [
+        "vegetable_dish-蒜蓉西兰花",
+        "meat_dish-麻婆豆腐",
+        "vegetable_dish-炒青菜"
+      ],
+      "returned_ids": [
+        "vegetable_dish-地三鲜",
+        "soup-紫菜蛋花汤",
+        "meat_dish-豆豉鲮鱼油麦菜"
+      ],
+      "hit": false,
+      "rr": 0.0,
+      "dcg": 0.0,
+      "idcg": 0.0
+    },
+    {
+      "query": "汤类",
+      "expected_ids": [
+        "soup-紫菜蛋花汤",
+        "soup-玉米排骨汤",
+        "soup-西红柿鸡蛋汤"
+      ],
+      "returned_ids": [
+        "vegetable_dish-西红柿豆腐汤羹",
+        "staple-汤面",
+        "soup-西红柿鸡蛋汤"
+      ],
+      "hit": true,
+      "rr": 0.3333,
+      "dcg": 0.5,
+      "idcg": 1.0
+    },
+    {
+      "query": "清蒸鱼",
+      "expected_ids": [
+        "aquatic-清蒸鲈鱼",
+        "aquatic-清蒸生蚝",
+        "aquatic-微波葱姜黑鳕鱼"
+      ],
+      "returned_ids": [
+        "aquatic-清蒸鲈鱼",
+        "meat_dish-清蒸鳜鱼",
+        "aquatic-葱油桂鱼"
+      ],
+      "hit": true,
+      "rr": 1.0,
+      "dcg": 1.0,
+      "idcg": 1.0
+    },
+    {
+      "query": "糖醋排骨",
+      "expected_ids": [
+        "meat_dish-糖醋排骨"
+      ],
+      "returned_ids": [
+        "meat_dish-糖醋排骨",
+        "meat_dish-酱排骨",
+        "meat_dish-醉排骨"
+      ],
+      "hit": true,
+      "rr": 1.0,
+      "dcg": 1.0,
+      "idcg": 1.0
+    },
+    {
+      "query": "新手也能做的菜",
+      "expected_ids": [
+        "breakfast-吐司果酱",
+        "breakfast-微波炉荷包蛋",
+        "vegetable_dish-炒青菜",
+        "breakfast-牛奶燕麦"
+      ],
+      "returned_ids": [
+        "vegetable_dish-炒滑蛋",
+        "aquatic-红烧鱼",
+        "staple-麻油拌面"
+      ],
+      "hit": false,
+      "rr": 0.0,
+      "dcg": 0.0,
+      "idcg": 0.0
+    },
+    {
+      "query": "适合夏天的清爽凉菜",
+      "expected_ids": [
+        "vegetable_dish-凉拌黄瓜",
+        "vegetable_dish-凉拌木耳"
+      ],
+      "returned_ids": [
+        "semi-finished-凉皮",
+        "meat_dish-凉拌鸡丝",
+        "vegetable_dish-芹菜拌茶树菇"
+      ],
+      "hit": false,
+      "rr": 0.0,
+      "dcg": 0.0,
+      "idcg": 0.0
+    },
+    {
+      "query": "宫保鸡丁",
+      "expected_ids": [
+        "meat_dish-宫保鸡丁"
+      ],
+      "returned_ids": [
+        "meat_dish-宫保鸡丁",
+        "meat_dish-干煸仔鸡",
+        "meat_dish-红烧鸡翅"
+      ],
+      "hit": true,
+      "rr": 1.0,
+      "dcg": 1.0,
+      "idcg": 1.0
+    },
+    {
+      "query": "咖喱菜",
+      "expected_ids": [
+        "meat_dish-咖喱肥牛",
+        "staple-日式咖喱饭",
+        "aquatic-咖喱炒蟹"
+      ],
+      "returned_ids": [
+        "staple-日式咖喱饭",
+        "meat_dish-咖喱肥牛",
+        "vegetable_dish-印度土豆花菜"
+      ],
+      "hit": true,
+      "rr": 1.0,
+      "dcg": 1.6309,
+      "idcg": 1.6309
+    },
+    {
+      "query": "豆腐菜",
+      "expected_ids": [
+        "meat_dish-麻婆豆腐",
+        "vegetable_dish-凉拌豆腐",
+        "vegetable_dish-脆皮豆腐",
+        "vegetable_dish-葱煎豆腐"
+      ],
+      "returned_ids": [
+        "vegetable_dish-脆皮豆腐",
+        "vegetable_dish-葱煎豆腐",
+        "vegetable_dish-凉拌豆腐"
+      ],
+      "hit": true,
+      "rr": 1.0,
+      "dcg": 2.1309,
+      "idcg": 2.1309
+    },
+    {
+      "query": "鸡蛋饼",
+      "expected_ids": [
+        "breakfast-燕麦鸡蛋饼",
+        "breakfast-手抓饼"
+      ],
+      "returned_ids": [
+        "breakfast-燕麦鸡蛋饼",
+        "staple-烙饼",
+        "breakfast-蛋煎糍粑"
+      ],
+      "hit": true,
+      "rr": 1.0,
+      "dcg": 1.0,
+      "idcg": 1.0
+    },
+    {
+      "query": "适合冬天吃的暖身菜",
+      "expected_ids": [
+        "soup-番茄牛肉蛋花汤",
+        "meat_dish-水煮肉片",
+        "soup-玉米排骨汤"
+      ],
+      "returned_ids": [
+        "vegetable_dish-红烧冬瓜",
+        "soup-陈皮排骨汤",
+        "meat_dish-萝卜炖羊排"
+      ],
+      "hit": false,
+      "rr": 0.0,
+      "dcg": 0.0,
+      "idcg": 0.0
+    },
+    {
+      "query": "蒜蓉虾",
+      "expected_ids": [
+        "aquatic-蒜蓉虾",
+        "aquatic-蒜香黄油虾",
+        "aquatic-黄油煎虾"
+      ],
+      "returned_ids": [
+        "aquatic-蒜蓉虾",
+        "meat_dish-芥末罗氏虾",
+        "aquatic-芥末黄油罗氏虾"
+      ],
+      "hit": true,
+      "rr": 1.0,
+      "dcg": 1.0,
+      "idcg": 1.0
+    },
+    {
+      "query": "米饭配什么菜",
+      "expected_ids": [
+        "meat_dish-回锅肉",
+        "meat_dish-鱼香肉丝",
+        "meat_dish-宫保鸡丁",
+        "meat_dish-辣椒炒肉"
+      ],
+      "returned_ids": [
+        "staple-鲣鱼海苔玉米饭",
+        "staple-咸肉菜饭",
+        "staple-猪油拌饭"
+      ],
+      "hit": false,
+      "rr": 0.0,
+      "dcg": 0.0,
+      "idcg": 0.0
+    },
+    {
+      "query": "不辣的川菜",
+      "expected_ids": [
+        "meat_dish-回锅肉",
+        "meat_dish-粉蒸肉"
+      ],
+      "returned_ids": [
+        "meat_dish-水煮肉片",
+        "meat_dish-口水鸡",
+        "staple-炒凉粉"
+      ],
+      "hit": false,
+      "rr": 0.0,
+      "dcg": 0.0,
+      "idcg": 0.0
+    },
+    {
+      "query": "炒饭",
+      "expected_ids": [
+        "staple-蛋炒饭",
+        "staple-扬州炒饭",
+        "staple-可乐炒饭"
+      ],
+      "returned_ids": [
+        "staple-蛋炒饭",
+        "staple-猪油拌饭",
+        "staple-扬州炒饭"
+      ],
+      "hit": true,
+      "rr": 1.0,
+      "dcg": 1.5,
+      "idcg": 1.6309
+    },
+    {
+      "query": "甜品",
+      "expected_ids": [
+        "dessert-咖啡椰奶冻",
+        "dessert-提拉米苏",
+        "dessert-烤蛋挞",
+        "dessert-炸鲜奶"
+      ],
+      "returned_ids": [
+        "dessert-酸奶意式奶冻",
+        "dessert-草莓冰淇淋",
+        "dessert-雪花酥"
+      ],
+      "hit": false,
+      "rr": 0.0,
+      "dcg": 0.0,
+      "idcg": 0.0
+    },
+    {
+      "query": "健康的减脂餐",
+      "expected_ids": [
+        "vegetable_dish-炒青菜",
+        "aquatic-清蒸鲈鱼",
+        "soup-西红柿鸡蛋汤",
+        "breakfast-水煮玉米"
+      ],
+      "returned_ids": [
+        "staple-麻辣减脂荞麦面",
+        "meat_dish-瘦肉土豆片",
+        "vegetable_dish-白灼菜心"
+      ],
+      "hit": false,
+      "rr": 0.0,
+      "dcg": 0.0,
+      "idcg": 0.0
+    },
+    {
+      "query": "排骨汤",
+      "expected_ids": [
+        "soup-玉米排骨汤",
+        "soup-陈皮排骨汤",
+        "soup-排骨苦瓜汤"
+      ],
+      "returned_ids": [
+        "soup-玉米排骨汤",
+        "soup-陈皮排骨汤",
+        "soup-陈皮排骨汤"
+      ],
+      "hit": true,
+      "rr": 1.0,
+      "dcg": 2.1309,
+      "idcg": 2.1309
+    },
+    {
+      "query": "微波炉能做的快手菜",
+      "expected_ids": [
+        "breakfast-微波炉荷包蛋",
+        "breakfast-微波炉蒸蛋",
+        "aquatic-微波葱姜黑鳕鱼"
+      ],
+      "returned_ids": [
+        "breakfast-微波炉荷包蛋",
+        "breakfast-微波炉蛋糕",
+        "breakfast-微波炉蒸蛋"
+      ],
+      "hit": true,
+      "rr": 1.0,
+      "dcg": 1.5,
+      "idcg": 1.6309
+    },
+    {
+      "query": "意大利面",
+      "expected_ids": [
+        "staple-炒意大利面",
+        "staple-意式肉酱面"
+      ],
+      "returned_ids": [
+        "staple-炒意大利面",
+        "staple-意式肉酱面",
+        "meat_dish-番茄红酱"
+      ],
+      "hit": true,
+      "rr": 1.0,
+      "dcg": 1.6309,
+      "idcg": 1.6309
+    },
+    {
+      "query": "辣子鸡",
+      "expected_ids": [
+        "meat_dish-贵州辣子鸡"
+      ],
+      "returned_ids": [
+        "meat_dish-干煸仔鸡",
+        "meat_dish-口水鸡",
+        "meat_dish-姜葱捞鸡"
+      ],
+      "hit": false,
+      "rr": 0.0,
+      "dcg": 0.0,
+      "idcg": 0.0
+    },
+    {
+      "query": "蒸菜不上火",
+      "expected_ids": [
+        "aquatic-清蒸鲈鱼",
+        "aquatic-清蒸生蚝",
+        "breakfast-蒸水蛋",
+        "meat_dish-清蒸鳜鱼"
+      ],
+      "returned_ids": [
+        "staple-煮锅蒸米饭",
+        "vegetable_dish-水油焖蔬菜",
+        "breakfast-蒸花卷"
+      ],
+      "hit": false,
+      "rr": 0.0,
+      "dcg": 0.0,
+      "idcg": 0.0
+    },
+    {
+      "query": "排骨做法",
+      "expected_ids": [
+        "meat_dish-糖醋排骨",
+        "meat_dish-土豆炖排骨",
+        "meat_dish-豉汁排骨",
+        "meat_dish-酱排骨"
+      ],
+      "returned_ids": [
+        "meat_dish-酱排骨",
+        "meat_dish-老式锅包肉",
+        "meat_dish-南派红烧肉"
+      ],
+      "hit": true,
+      "rr": 1.0,
+      "dcg": 1.0,
+      "idcg": 1.0
+    },
+    {
+      "query": "面条类主食",
+      "expected_ids": [
+        "staple-葱油拌面",
+        "staple-炸酱面",
+        "staple-热干面",
+        "staple-陕西油泼面"
+      ],
+      "returned_ids": [
+        "staple-河南蒸面条",
+        "staple-汤面",
+        "staple-豆角焖面"
+      ],
+      "hit": false,
+      "rr": 0.0,
+      "dcg": 0.0,
+      "idcg": 0.0
+    }
+  ]
+}

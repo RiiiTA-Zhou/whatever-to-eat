@@ -1,0 +1,16 @@
+{
+  "user_id": "eval_user_002",
+  "preferences": {
+    "tastes": [
+      "清淡",
+      "鲜香"
+    ],
+    "dislikes": [
+      "太油腻的",
+      "重口味"
+    ],
+    "avoid": [],
+    "difficulty_preference": null
+  },
+  "recent_meals": []
+}

@@ -1,0 +1,432 @@
+{
+  "_description": "Test cases for whatever-to-eat agent evaluation",
+
+  "retrieval": {
+    "_description": "Queries with expected relevant recipe IDs for retrieval quality metrics",
+    "test_queries": [
+      {
+        "query": "辣椒炒肉",
+        "expected_ids": ["meat_dish-辣椒炒肉"],
+        "category": "exact_name"
+      },
+      {
+        "query": "我想吃清淡的鸡肉菜",
+        "expected_ids": ["meat_dish-口水鸡", "meat_dish-姜葱捞鸡", "meat_dish-凉拌鸡丝"],
+        "category": "taste_ingredient"
+      },
+      {
+        "query": "红烧鱼",
+        "expected_ids": ["aquatic-红烧鱼", "aquatic-红烧鱼头", "aquatic-红烧鲤鱼"],
+        "category": "exact_name"
+      },
+      {
+        "query": "麻辣海鲜",
+        "expected_ids": ["aquatic-水煮鱼", "aquatic-小龙虾", "aquatic-烤鱼"],
+        "category": "taste_ingredient"
+      },
+      {
+        "query": "简单的早餐",
+        "expected_ids": ["breakfast-吐司果酱", "breakfast-太阳蛋", "breakfast-微波炉荷包蛋"],
+        "category": "difficulty_meal_type"
+      },
+      {
+        "query": "下饭的猪肉菜",
+        "expected_ids": ["meat_dish-回锅肉", "meat_dish-湖南家常红烧肉", "meat_dish-简易红烧肉"],
+        "category": "taste_ingredient"
+      },
+      {
+        "query": "素菜",
+        "expected_ids": ["vegetable_dish-蒜蓉西兰花", "meat_dish-麻婆豆腐", "vegetable_dish-炒青菜"],
+        "category": "vegetarian"
+      },
+      {
+        "query": "汤类",
+        "expected_ids": ["soup-紫菜蛋花汤", "soup-玉米排骨汤", "soup-西红柿鸡蛋汤"],
+        "category": "meal_type"
+      },
+      {
+        "query": "清蒸鱼",
+        "expected_ids": ["aquatic-清蒸鲈鱼", "aquatic-清蒸生蚝", "aquatic-微波葱姜黑鳕鱼"],
+        "category": "cooking_method"
+      },
+      {
+        "query": "糖醋排骨",
+        "expected_ids": ["meat_dish-糖醋排骨"],
+        "category": "exact_name"
+      },
+      {
+        "query": "新手也能做的菜",
+        "expected_ids": ["breakfast-吐司果酱", "breakfast-微波炉荷包蛋", "vegetable_dish-炒青菜", "breakfast-牛奶燕麦"],
+        "category": "difficulty"
+      },
+      {
+        "query": "适合夏天的清爽凉菜",
+        "expected_ids": ["vegetable_dish-凉拌黄瓜", "vegetable_dish-凉拌木耳"],
+        "category": "seasonal"
+      },
+      {
+        "query": "宫保鸡丁",
+        "expected_ids": ["meat_dish-宫保鸡丁"],
+        "category": "exact_name"
+      },
+      {
+        "query": "咖喱菜",
+        "expected_ids": ["meat_dish-咖喱肥牛", "staple-日式咖喱饭", "aquatic-咖喱炒蟹"],
+        "category": "taste_ingredient"
+      },
+      {
+        "query": "豆腐菜",
+        "expected_ids": ["meat_dish-麻婆豆腐", "vegetable_dish-凉拌豆腐", "vegetable_dish-脆皮豆腐", "vegetable_dish-葱煎豆腐"],
+        "category": "ingredient"
+      },
+      {
+        "query": "鸡蛋饼",
+        "expected_ids": ["breakfast-燕麦鸡蛋饼", "breakfast-手抓饼"],
+        "category": "exact_name"
+      },
+      {
+        "query": "适合冬天吃的暖身菜",
+        "expected_ids": ["soup-番茄牛肉蛋花汤", "meat_dish-水煮肉片", "soup-玉米排骨汤"],
+        "category": "seasonal"
+      },
+      {
+        "query": "蒜蓉虾",
+        "expected_ids": ["aquatic-蒜蓉虾", "aquatic-蒜香黄油虾", "aquatic-黄油煎虾"],
+        "category": "exact_name"
+      },
+      {
+        "query": "米饭配什么菜",
+        "expected_ids": ["meat_dish-回锅肉", "meat_dish-鱼香肉丝", "meat_dish-宫保鸡丁", "meat_dish-辣椒炒肉"],
+        "category": "meal_pairing"
+      },
+      {
+        "query": "不辣的川菜",
+        "expected_ids": ["meat_dish-回锅肉", "meat_dish-粉蒸肉"],
+        "category": "negative_filter"
+      },
+      {
+        "query": "炒饭",
+        "expected_ids": ["staple-蛋炒饭", "staple-扬州炒饭", "staple-可乐炒饭"],
+        "category": "meal_type"
+      },
+      {
+        "query": "甜品",
+        "expected_ids": ["dessert-咖啡椰奶冻", "dessert-提拉米苏", "dessert-烤蛋挞", "dessert-炸鲜奶"],
+        "category": "meal_type"
+      },
+      {
+        "query": "健康的减脂餐",
+        "expected_ids": ["vegetable_dish-炒青菜", "aquatic-清蒸鲈鱼", "soup-西红柿鸡蛋汤", "breakfast-水煮玉米"],
+        "category": "health"
+      },
+      {
+        "query": "排骨汤",
+        "expected_ids": ["soup-玉米排骨汤", "soup-陈皮排骨汤", "soup-排骨苦瓜汤"],
+        "category": "exact_name"
+      },
+      {
+        "query": "微波炉能做的快手菜",
+        "expected_ids": ["breakfast-微波炉荷包蛋", "breakfast-微波炉蒸蛋", "aquatic-微波葱姜黑鳕鱼"],
+        "category": "cooking_tool"
+      },
+      {
+        "query": "意大利面",
+        "expected_ids": ["staple-炒意大利面", "staple-意式肉酱面"],
+        "category": "exact_name"
+      },
+      {
+        "query": "辣子鸡",
+        "expected_ids": ["meat_dish-贵州辣子鸡"],
+        "category": "exact_name"
+      },
+      {
+        "query": "蒸菜不上火",
+        "expected_ids": ["aquatic-清蒸鲈鱼", "aquatic-清蒸生蚝", "breakfast-蒸水蛋", "meat_dish-清蒸鳜鱼"],
+        "category": "cooking_method"
+      },
+      {
+        "query": "排骨做法",
+        "expected_ids": ["meat_dish-糖醋排骨", "meat_dish-土豆炖排骨", "meat_dish-豉汁排骨", "meat_dish-酱排骨"],
+        "category": "ingredient"
+      },
+      {
+        "query": "面条类主食",
+        "expected_ids": ["staple-葱油拌面", "staple-炸酱面", "staple-热干面", "staple-陕西油泼面"],
+        "category": "meal_type"
+      }
+    ]
+  },
+
+  "recommendation": {
+    "_description": "Test scenarios for LLM-as-Judge recommendation quality evaluation",
+    "scenarios": [
+      {
+        "id": "rec_001",
+        "name": "新用户基础推荐",
+        "description": "无偏好新用户请求推荐",
+        "user_id": "eval_user_001",
+        "setup": {
+          "preferences": {
+            "tastes": [],
+            "dislikes": [],
+            "avoid": [],
+            "difficulty_preference": null
+          },
+          "recent_meals": []
+        },
+        "query": "随便推荐一道菜吧",
+        "expected_behaviors": [
+          "应包含至少一道菜",
+          "应包含逐步做法",
+          "推荐应普适，不要过于极端"
+        ]
+      },
+      {
+        "id": "rec_002",
+        "name": "口味偏好遵守",
+        "description": "喜欢清淡口味的用户请求推荐",
+        "user_id": "eval_user_002",
+        "setup": {
+          "preferences": {
+            "tastes": ["清淡", "鲜香"],
+            "dislikes": ["太油腻的", "重口味"],
+            "avoid": [],
+            "difficulty_preference": null
+          },
+          "recent_meals": []
+        },
+        "query": "今天想吃什么",
+        "expected_behaviors": [
+          "推荐应以清淡为主",
+          "不应推荐麻辣、油炸类菜",
+          "应包含蒸、煮等清淡烹饪方式的菜"
+        ]
+      },
+      {
+        "id": "rec_003",
+        "name": "忌口约束",
+        "description": "海鲜过敏用户请求推荐",
+        "user_id": "eval_user_003",
+        "setup": {
+          "preferences": {
+            "tastes": ["鲜香"],
+            "dislikes": [],
+            "avoid": ["海鲜", "虾", "蟹", "鱼", "贝类"],
+            "difficulty_preference": null
+          },
+          "recent_meals": []
+        },
+        "query": "推荐一道菜",
+        "expected_behaviors": [
+          "绝对不能推荐任何海鲜类菜品",
+          "应推荐肉类或素菜"
+        ]
+      },
+      {
+        "id": "rec_004",
+        "name": "新手难度偏好",
+        "description": "厨房新手请求推荐简单菜",
+        "user_id": "eval_user_004",
+        "setup": {
+          "preferences": {
+            "tastes": [],
+            "dislikes": [],
+            "avoid": [],
+            "difficulty_preference": 1
+          },
+          "recent_meals": []
+        },
+        "query": "我是新手，推荐个简单的菜",
+        "expected_behaviors": [
+          "推荐菜品难度应为 1-2 星",
+          "不应推荐 4-5 星难度菜品",
+          "做法步骤应简洁明了"
+        ]
+      },
+      {
+        "id": "rec_005",
+        "name": "避免近期重复",
+        "description": "近期吃过某菜后再次请求推荐",
+        "user_id": "eval_user_005",
+        "setup": {
+          "preferences": {
+            "tastes": [],
+            "dislikes": [],
+            "avoid": [],
+            "difficulty_preference": null
+          },
+          "recent_meals": [
+            {"date": "2026-04-29", "dish": "红烧肉"},
+            {"date": "2026-04-28", "dish": "宫保鸡丁"},
+            {"date": "2026-04-27", "dish": "番茄炒蛋"}
+          ]
+        },
+        "query": "今天吃点什么好",
+        "expected_behaviors": [
+          "不应推荐近期已吃过的红烧肉、宫保鸡丁、番茄炒蛋",
+          "推荐应与近期饮食有差异"
+        ]
+      },
+      {
+        "id": "rec_006",
+        "name": "特定菜名查询",
+        "description": "用户明确指定想吃某道菜",
+        "user_id": "eval_user_006",
+        "setup": {
+          "preferences": {
+            "tastes": [],
+            "dislikes": [],
+            "avoid": [],
+            "difficulty_preference": null
+          },
+          "recent_meals": []
+        },
+        "query": "我想吃红烧排骨，给我菜谱",
+        "expected_behaviors": [
+          "应返回红烧排骨的具体菜谱",
+          "应包含完整的做法步骤"
+        ]
+      },
+      {
+        "id": "rec_007",
+        "name": "复合偏好约束",
+        "description": "有多个偏好约束的用户",
+        "user_id": "eval_user_007",
+        "setup": {
+          "preferences": {
+            "tastes": ["清淡", "酸甜"],
+            "dislikes": ["内脏", "太辣"],
+            "avoid": ["牛奶", "花生"],
+            "difficulty_preference": 2
+          },
+          "recent_meals": [
+            {"date": "2026-04-29", "dish": "清蒸鲈鱼, 炒青菜"}
+          ]
+        },
+        "query": "推荐今天的午餐",
+        "expected_behaviors": [
+          "口味应清淡或酸甜",
+          "不能含内脏、牛奶、花生",
+          "不能太辣",
+          "难度不超过2-3星",
+          "避免重复清蒸鲈鱼和炒青菜",
+          "应包含主食和荤素搭配"
+        ]
+      },
+      {
+        "id": "rec_008",
+        "name": "特定场景需求",
+        "description": "用户为聚餐请求推荐",
+        "user_id": "eval_user_008",
+        "setup": {
+          "preferences": {
+            "tastes": [],
+            "dislikes": [],
+            "avoid": [],
+            "difficulty_preference": null
+          },
+          "recent_meals": []
+        },
+        "query": "朋友来家里吃饭，推荐几道拿得出手的菜",
+        "expected_behaviors": [
+          "应推荐2-3道菜",
+          "推荐应适合待客场景",
+          "菜谱之间应搭配合理"
+        ]
+      },
+      {
+        "id": "rec_009",
+        "name": "饮食多样性",
+        "description": "验证连续推荐不会重复",
+        "user_id": "eval_user_009",
+        "setup": {
+          "preferences": {
+            "tastes": [],
+            "dislikes": [],
+            "avoid": [],
+            "difficulty_preference": null
+          },
+          "recent_meals": [
+            {"date": "2026-04-29", "dish": "红烧鱼, 清炒西兰花"},
+            {"date": "2026-04-28", "dish": "宫保鸡丁, 紫菜蛋花汤"},
+            {"date": "2026-04-27", "dish": "番茄炒蛋, 糖醋排骨"},
+            {"date": "2026-04-26", "dish": "回锅肉, 酸辣土豆丝"},
+            {"date": "2026-04-25", "dish": "蒜蓉虾, 凉拌黄瓜"},
+            {"date": "2026-04-24", "dish": "咖喱鸡肉, 炒青菜"},
+            {"date": "2026-04-23", "dish": "水煮鱼, 蒸蛋"}
+          ]
+        },
+        "query": "推荐今天的晚饭",
+        "expected_behaviors": [
+          "不应推荐近期7天内已吃过的菜",
+          "推荐应有新意"
+        ]
+      },
+      {
+        "id": "rec_010",
+        "name": "模糊需求",
+        "description": "用户只说随便",
+        "user_id": "eval_user_010",
+        "setup": {
+          "preferences": {
+            "tastes": [],
+            "dislikes": [],
+            "avoid": [],
+            "difficulty_preference": null
+          },
+          "recent_meals": []
+        },
+        "query": "随便",
+        "expected_behaviors": [
+          "仍应给出推荐",
+          "可以根据营养学知识给出合理搭配",
+          "回复应友好自然"
+        ]
+      },
+      {
+        "id": "rec_011",
+        "name": "指定食材推荐",
+        "description": "用户指定了手头有的食材，要求基于这些食材推荐菜谱",
+        "user_id": "eval_user_011",
+        "setup": {
+          "preferences": {
+            "tastes": [],
+            "dislikes": [],
+            "avoid": [],
+            "difficulty_preference": null
+          },
+          "recent_meals": []
+        },
+        "query": "我家有豆腐、番茄、鸡蛋，能做点什么菜？",
+        "expected_behaviors": [
+          "推荐应基于用户指定的食材（豆腐、番茄、鸡蛋）",
+          "应调用 search_recipes_with_filters 搜索含这些食材的菜谱",
+          "推荐的核心食材应包含豆腐、番茄、鸡蛋中的至少一种",
+          "不应推荐需要完全不相干食材的菜（如牛排、三文鱼）"
+        ]
+      },
+      {
+        "id": "rec_012",
+        "name": "本地库未收录菜谱",
+        "description": "用户想吃的菜不在本地菜谱库中，应触发网络搜索回退",
+        "user_id": "eval_user_012",
+        "setup": {
+          "preferences": {
+            "tastes": [],
+            "dislikes": [],
+            "avoid": [],
+            "difficulty_preference": null
+          },
+          "recent_meals": []
+        },
+        "query": "我想吃猪肺汤，帮我找找做法",
+        "expected_behaviors": [
+          "本地数据库中没有猪肺汤，应触发 web_search 回退",
+          "应通过网络搜索获取猪肺汤相关信息",
+          "如网络搜索结果有效，应给出猪肺汤的做法或相关推荐",
+          "如所有搜索均失败，应基于自身知识给出建议或推荐替代菜品"
+        ]
+      }
+    ]
+  }
+}

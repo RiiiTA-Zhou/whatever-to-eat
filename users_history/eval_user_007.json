@@ -1,0 +1,24 @@
+{
+  "user_id": "eval_user_007",
+  "preferences": {
+    "tastes": [
+      "清淡",
+      "酸甜"
+    ],
+    "dislikes": [
+      "内脏",
+      "太辣"
+    ],
+    "avoid": [
+      "牛奶",
+      "花生"
+    ],
+    "difficulty_preference": 2
+  },
+  "recent_meals": [
+    {
+      "date": "2026-04-29",
+      "dish": "清蒸鲈鱼, 炒青菜"
+    }
+  ]
+}
