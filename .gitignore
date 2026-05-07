@@ -4,4 +4,5 @@
 *.jpeg
 .vscode/*
 user_history/*
+user_memory/
 */__pycache__/*

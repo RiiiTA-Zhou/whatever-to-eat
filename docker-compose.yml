@@ -7,23 +7,19 @@ services:
       - "8000:8000"
     volumes:
       - ./src:/app/src
-      - ./users_history:/app/users_history
+      - ./user_memory:/app/user_memory
       - ./.env:/app/.env
     environment:
       - PYTHONPATH=/app/src
     restart: unless-stopped
 
-  web:
-    build: .
-    container_name: whatever-to-eat-web
-    command: python src/web_demo.py
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: whatever-to-eat-frontend
     ports:
-      - "7860:7860"
+      - "5173:80"
     depends_on:
       - api
-    volumes:
-      - ./src:/app/src
-    environment:
-      - API_BASE_URL=http://api:8000
-      - PYTHONPATH=/app/src
     restart: unless-stopped

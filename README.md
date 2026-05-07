@@ -93,18 +93,19 @@ docker compose down
 
 启动后：
 - **API 服务** → http://localhost:8000
-- **Gradio Web 界面** → http://localhost:7860
+- **React 前端** → http://localhost:5173
 
 `.env` 配置文件会自动挂载到容器中。修改代码后重新构建需加 `--build`。
 
-#### Gradio Web 界面
+#### 启动前端开发服务器
 
 ```bash
-cd whatever-to-eat
-python src/web_demo.py
+cd whatever-to-eat/frontend
+npm install
+npm run dev
 ```
 
-访问 http://localhost:7860
+访问 http://localhost:5173
 
 ### 目录结构
 
@@ -113,12 +114,11 @@ whatever-to-eat/
 ├── src/
 │   ├── whatever_agent.py      # Agent 主入口（CLI）
 │   ├── api.py                 # FastAPI 后端服务
-│   ├── web_demo.py            # Gradio 前端界面
-│   ├── user_memory.py        # 用户记忆管理
+│   ├── user_memory.py        # 用户记忆管理（SQLite）
 │   ├── prompt_template.py    # 系统提示词模板
 │   ├── recipe_retrieval_tool.py  # 本地向量库搜索
 │   └── web_search_tool.py    # 网络搜索
-├── users_history/             # 用户记忆存储目录
+├── user_memory/               # 用户记忆数据库（SQLite）
 └── data/                     # 菜谱向量库数据
 ```
 

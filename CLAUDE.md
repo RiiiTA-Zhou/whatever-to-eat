@@ -18,10 +18,10 @@ python src/whatever_agent.py
 # API server (FastAPI)
 uvicorn src.api:app --reload --port 8000
 
-# Gradio web UI (visit http://localhost:7860)
-python src/web_demo.py
+# React frontend (dev server, visit http://localhost:5173)
+cd frontend && npm run dev
 
-# Docker (full stack: API + Web)
+# Docker (full stack: API + Frontend)
 docker compose up --build
 ```
 
@@ -41,7 +41,7 @@ Configure in `.env`:
 |-------|-----------|---------|
 | `src/whatever_agent.py` | LangChain CLI | Interactive terminal chat with login/register |
 | `src/api.py` | FastAPI | REST API with SSE streaming (`/chat`, `/chat_sync`, `/register`, `/history/{user_id}`) |
-| `src/web_demo.py` | Gradio | Browser UI that connects to the FastAPI backend |
+| `frontend/` | React (Vite) | Animal Island UI browser frontend |
 
 ### Core Agent (`src/whatever_agent.py`)
 
@@ -70,7 +70,7 @@ Configure in `.env`:
 
 ### User Memory System (`src/user_memory.py`)
 
-`UserMemoryManager` stores per-user preferences as JSON files in `users_history/{user_id}.json`:
+`UserMemoryManager` stores per-user preferences in SQLite (`user_memory/whatever_to_eat.db`):
 - **Preferences**: `tastes`, `dislikes`, `avoid` (allergies), `difficulty_preference`
 - **Recent meals**: Timestamped meal history (keeps last 30 entries, shows last 7 in prompt)
 - Memory is injected into the system prompt on every turn, and refreshed after each interaction
@@ -103,6 +103,17 @@ Configure in `.env`:
 
 Two services defined in `docker-compose.yml`:
 - `api` — FastAPI on port 8000
-- `web` — Gradio on port 7860, depends on `api`
-- `users_history` mounted as a volume for persistence
+- `frontend` — React (Vite build) with nginx on port 5173, proxies `/api` to `api`
+- `user_memory` mounted as a volume for persistence
 - `.env` mounted for configuration
+
+### Frontend (`frontend/`)
+
+Built with **Vite + React + TypeScript** using **animal-island-ui** component library:
+- **Login page**: User ID input with register/login
+- **Chat page**: SSE streaming chat with Typewriter welcome message
+- **Preferences panel**: Modal with tastes, dislikes, allergies, difficulty, recent meals
+- **API client**: `src/api/index.ts` — all backend communication, uses `VITE_API_BASE_URL` env var (default `http://localhost:8000`)
+
+Run dev server: `cd frontend && npm run dev` (requires API running on port 8000)
+Build: `cd frontend && npx vite build`

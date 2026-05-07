@@ -14,7 +14,6 @@ graph TB
     %% ===== 用户输入层 =====
     CLI["💻 命令行 CLI<br/>whatever_agent.py"]
     API["🌐 FastAPI 接口<br/>api.py"]
-    WebUI["🎨 Gradio 前端<br/>web_demo.py"]
 
     %% ===== Agent 核心 =====
     subgraph AgentCore ["Agent 核心 (LangChain ReAct)"]
@@ -51,13 +50,12 @@ graph TB
         UMM["👤 UserMemoryManager<br/>user_memory.py"]
         Prefs["❤️ 偏好信息<br/>口味 / 忌口 / 难度"]
         History["📅 饮食历史<br/>最近用餐记录"]
-        Store["💾 持久化存储<br/>users_history/{user_id}.json"]
+        Store["💾 持久化存储<br/>user_memory/whatever_to_eat.db"]
     end
 
     %% ===== 连接 =====
     CLI --> LC
     API --> LC
-    WebUI --> LC
     LLM --> LC
     SP --> LC
 
@@ -84,10 +82,9 @@ graph TB
     %% 点击交互
     click CLI "https://github.com/RiiiTA-Zhou/whatever-to-eat/blob/main/src/whatever_agent.py"
     click API "https://github.com/RiiiTA-Zhou/whatever-to-eat/blob/main/src/api.py"
-    click WebUI "https://github.com/RiiiTA-Zhou/whatever-to-eat/blob/main/src/web_demo.py"
 
     %% 应用样式
-    class CLI,API,WebUI input
+    class CLI,API input
     class LLM,SP,LC core
     class RAG,WebSearch,MemUpdate tool
     class Embedding,Chroma,Filter,RawData rag
@@ -112,6 +109,6 @@ graph TB
 ### 3. 用户偏好记忆流程
 ```
 对话中提取偏好 → update_memory_as_tool() 工具调用
-  → UserMemoryManager 更新内存 → 写入 users_history/*.json
+  → UserMemoryManager 更新内存 → 写入 SQLite 数据库
   → 刷新系统提示词 → 后续对话感知用户偏好
 ```

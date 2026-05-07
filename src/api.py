@@ -77,8 +77,7 @@ async def register(req: RegisterRequest):
     if not user_id:
         raise HTTPException(status_code=400, detail="user_id is required")
 
-    memory_path = f"./users_history/{user_id}.json"
-    if os.path.exists(memory_path):
+    if UserMemoryManager.user_exists(user_id):
         return {"status": "exists", "user_id": user_id, "message": f"用户 {user_id} 已存在"}
 
     UserMemoryManager(user_id)

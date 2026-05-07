@@ -16,8 +16,8 @@ COPY src/ ./src/
 COPY data/ ./data/
 COPY recipe_db/ ./recipe_db/
 
-# 创建用户记忆存储目录（用 volume 挂载覆盖）
-RUN mkdir -p /app/users_history
+# 创建数据目录（SQLite 和菜谱数据）
+RUN mkdir -p /app/user_memory
 
 # .env 由 docker-compose 的环境变量或 volume 挂载提供
 ENV PYTHONPATH=/app/src
